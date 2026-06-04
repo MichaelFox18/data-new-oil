@@ -1,0 +1,219 @@
+{
+  "file": "data/raw/texas/texas_data_brokers_2026-06-04.csv",
+  "encoding": "utf-8",
+  "delimiter": ",",
+  "rows": 400,
+  "cols": 19,
+  "duplicate_full_rows": 0,
+  "columns": [
+    {
+      "name": "Record Name:",
+      "non_null": 399,
+      "blank_pct": 0.2,
+      "n_unique": 399,
+      "examples": [
+        "Exported On:",
+        "Registration Number",
+        "20260107"
+      ]
+    },
+    {
+      "name": "Data Broker Registrationses",
+      "non_null": 399,
+      "blank_pct": 0.2,
+      "n_unique": 392,
+      "examples": [
+        "Jun 4, 2026 11:15 AM",
+        "Full Legal Name",
+        "DisplayLogix LLC"
+      ]
+    },
+    {
+      "name": "Unnamed: 2",
+      "non_null": 398,
+      "blank_pct": 0.5,
+      "n_unique": 367,
+      "examples": [
+        "Primary Physical Address",
+        "368 Old Palmetto Bluff Road, 368 Old Palmetto Bluff Road , B",
+        "1224 GRAYLYNN DR , VESTAVIA HILLS , AL , 35216-2636 , United"
+      ]
+    },
+    {
+      "name": "Unnamed: 3",
+      "non_null": 398,
+      "blank_pct": 0.5,
+      "n_unique": 367,
+      "examples": [
+        "Data Broker Email Address",
+        "brandon@display-logix.com",
+        "david@beaconterritory.com"
+      ]
+    },
+    {
+      "name": "Unnamed: 4",
+      "non_null": 398,
+      "blank_pct": 0.5,
+      "n_unique": 379,
+      "examples": [
+        "Website",
+        "www.display-logix.com",
+        "https://www.beaconterritory.com/"
+      ]
+    },
+    {
+      "name": "Unnamed: 5",
+      "non_null": 344,
+      "blank_pct": 14.0,
+      "n_unique": 320,
+      "examples": [
+        "Consumer Rights Link",
+        "https://app.termly.io/policy-viewer/policy.html?policyUUID=e",
+        "https://www.beaconterritory.com/texas-privacy-rights/"
+      ]
+    },
+    {
+      "name": "Unnamed: 6",
+      "non_null": 398,
+      "blank_pct": 0.5,
+      "n_unique": 356,
+      "examples": [
+        "Telephone Number",
+        "8432904821",
+        "2058090527"
+      ]
+    },
+    {
+      "name": "Unnamed: 7",
+      "non_null": 398,
+      "blank_pct": 0.5,
+      "n_unique": 346,
+      "examples": [
+        "Contact Person",
+        "Brandon McKinley",
+        "David McBrayer"
+      ]
+    },
+    {
+      "name": "Unnamed: 8",
+      "non_null": 398,
+      "blank_pct": 0.5,
+      "n_unique": 384,
+      "examples": [
+        "Categories of Data Processed and Transferred",
+        "DisplayLogix processes and transfers the following specific ",
+        "Beacon Territory Group, LLC processes and transfers consumer"
+      ]
+    },
+    {
+      "name": "Unnamed: 9",
+      "non_null": 398,
+      "blank_pct": 0.5,
+      "n_unique": 3,
+      "examples": [
+        "Purchaser Credentialing Process",
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "name": "Unnamed: 10",
+      "non_null": 398,
+      "blank_pct": 0.5,
+      "n_unique": 3,
+      "examples": [
+        "Data of a Known Child",
+        "No",
+        "Yes"
+      ]
+    },
+    {
+      "name": "Unnamed: 11",
+      "non_null": 8,
+      "blank_pct": 98.0,
+      "n_unique": 8,
+      "examples": [
+        "Data of a Known Child - Additional Details",
+        "Marriott collects the personal data of known children for li",
+        "None of this data is used in connection with our processing,"
+      ]
+    },
+    {
+      "name": "Unnamed: 12",
+      "non_null": 8,
+      "blank_pct": 98.0,
+      "n_unique": 8,
+      "examples": [
+        "Data of a Known Child - Law Compliance",
+        "Collection occurs with informed parental consent and is limi",
+        "None of this data is used in connection with our processing,"
+      ]
+    },
+    {
+      "name": "Unnamed: 13",
+      "non_null": 398,
+      "blank_pct": 0.5,
+      "n_unique": 3,
+      "examples": [
+        "Number of Security Breaches",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "name": "Unnamed: 14",
+      "non_null": 27,
+      "blank_pct": 93.2,
+      "n_unique": 15,
+      "examples": [
+        "Security Breaches - Additional Details",
+        "none",
+        "3,860,111  impacted consumers"
+      ]
+    },
+    {
+      "name": "Unnamed: 15",
+      "non_null": 256,
+      "blank_pct": 36.0,
+      "n_unique": 233,
+      "examples": [
+        "Additional Information or Explanation",
+        "Our identifiers are advertising-specific and user-resettable",
+        "Vendelux aggregates business contact information that is gen"
+      ]
+    },
+    {
+      "name": "Unnamed: 16",
+      "non_null": 398,
+      "blank_pct": 0.5,
+      "n_unique": 329,
+      "examples": [
+        "Authorized Person",
+        "Brandon McKinley",
+        "David McBrayer"
+      ]
+    },
+    {
+      "name": "Unnamed: 17",
+      "non_null": 398,
+      "blank_pct": 0.5,
+      "n_unique": 193,
+      "examples": [
+        "Authorized Person Title",
+        "Founder & President",
+        "Owner, Beacon Territory Group LLC"
+      ]
+    },
+    {
+      "name": "Unnamed: 18",
+      "non_null": 398,
+      "blank_pct": 0.5,
+      "n_unique": 193,
+      "examples": [
+        "Submitted On",
+        "6/2/2026",
+        "6/1/2026"
+      ]
+    }
+  ]
+}

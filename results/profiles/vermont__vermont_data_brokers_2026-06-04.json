@@ -1,0 +1,431 @@
+{
+  "file": "data/raw/vermont/vermont_data_brokers_2026-06-04.xlsx",
+  "encoding": "xlsx",
+  "delimiter": "xlsx",
+  "rows": 714,
+  "cols": 39,
+  "duplicate_full_rows": 26,
+  "columns": [
+    {
+      "name": "Name",
+      "non_null": 714,
+      "blank_pct": 0.0,
+      "n_unique": 445,
+      "examples": [
+        "BLIS GLOBAL LTD",
+        "Wiland, Inc.",
+        "Lookify"
+      ]
+    },
+    {
+      "name": "Idregistration",
+      "non_null": 714,
+      "blank_pct": 0.0,
+      "n_unique": 458,
+      "examples": [
+        "122238",
+        "214408",
+        "183316"
+      ]
+    },
+    {
+      "name": "DataBrokerStatus",
+      "non_null": 714,
+      "blank_pct": 0.0,
+      "n_unique": 2,
+      "examples": [
+        "Registered",
+        "Unregistered"
+      ]
+    },
+    {
+      "name": "PhysicalStreetAddress1",
+      "non_null": 714,
+      "blank_pct": 0.0,
+      "n_unique": 392,
+      "examples": [
+        "32 London Bridge Street",
+        "7420 E Dry Creek Parkway",
+        "3571 Far West Blvd"
+      ]
+    },
+    {
+      "name": "PhysicalStreetAddress2",
+      "non_null": 345,
+      "blank_pct": 51.7,
+      "n_unique": 168,
+      "examples": [
+        "15th Floor, The Shard",
+        "#3694",
+        "Suite 200"
+      ]
+    },
+    {
+      "name": "PhysicalCity",
+      "non_null": 714,
+      "blank_pct": 0.0,
+      "n_unique": 216,
+      "examples": [
+        "London",
+        "Niwot",
+        "Austin"
+      ]
+    },
+    {
+      "name": "PhysicalState",
+      "non_null": 706,
+      "blank_pct": 1.1,
+      "n_unique": 41,
+      "examples": [
+        "VT",
+        "CO",
+        "TX"
+      ]
+    },
+    {
+      "name": "PhysicalZIP5",
+      "non_null": 701,
+      "blank_pct": 1.8,
+      "n_unique": 284,
+      "examples": [
+        "80503",
+        "78731",
+        "33309"
+      ]
+    },
+    {
+      "name": "PhysicalZIP4",
+      "non_null": 252,
+      "blank_pct": 64.7,
+      "n_unique": 144,
+      "examples": [
+        "3064",
+        "1113",
+        "2253"
+      ]
+    },
+    {
+      "name": "PhysicalCountry",
+      "non_null": 714,
+      "blank_pct": 0.0,
+      "n_unique": 6,
+      "examples": [
+        "GBR",
+        "USA",
+        "CAN"
+      ]
+    },
+    {
+      "name": "PhysicalPostalCode",
+      "non_null": 13,
+      "blank_pct": 98.2,
+      "n_unique": 9,
+      "examples": [
+        "SE1 9SG",
+        "K1P1J9",
+        "WC2H 9JA"
+      ]
+    },
+    {
+      "name": "PhysicalProvince",
+      "non_null": 13,
+      "blank_pct": 98.2,
+      "n_unique": 8,
+      "examples": [
+        "London",
+        "ON",
+        "United Kingdom"
+      ]
+    },
+    {
+      "name": "EmailAddress",
+      "non_null": 714,
+      "blank_pct": 0.0,
+      "n_unique": 408,
+      "examples": [
+        "privacy@blis.com",
+        "privacy@wiland.com",
+        "support@lookify.io"
+      ]
+    },
+    {
+      "name": "PrimaryInterneturl",
+      "non_null": 714,
+      "blank_pct": 0.0,
+      "n_unique": 432,
+      "examples": [
+        "www.blis.com",
+        "www.wiland.com/privacy-choices",
+        "https://lookify.io"
+      ]
+    },
+    {
+      "name": "IspersonalinformationOptOut",
+      "non_null": 714,
+      "blank_pct": 0.0,
+      "n_unique": 2,
+      "examples": [
+        "True",
+        "False"
+      ]
+    },
+    {
+      "name": "OptOutMethod",
+      "non_null": 649,
+      "blank_pct": 9.1,
+      "n_unique": 405,
+      "examples": [
+        "Vermont residents may exercise their Vermont privacy rights ",
+        "We are a marketing company whose clients range from some of ",
+        "Consumers may submit an Opt-Out request at https://lookify.i"
+      ]
+    },
+    {
+      "name": "OptOutActivities",
+      "non_null": 538,
+      "blank_pct": 24.6,
+      "n_unique": 304,
+      "examples": [
+        "Opt out applies to targeted advertising and sales",
+        "Our opt-out solutions apply to our products that involve our",
+        "All"
+      ]
+    },
+    {
+      "name": "ThirdPartyOptOutAuthorization",
+      "non_null": 649,
+      "blank_pct": 9.1,
+      "n_unique": 216,
+      "examples": [
+        "Yes although we will need to verify who you are",
+        "We believe in honoring consumer's privacy choices, which are",
+        "Yes, a power of attorney is required to authorize a third pa"
+      ]
+    },
+    {
+      "name": "NonOptOutDataCollectionStatement",
+      "non_null": 561,
+      "blank_pct": 21.4,
+      "n_unique": 327,
+      "examples": [
+        "We will need to retain a record of your request ",
+        "See above response. For more information on how we use and p",
+        "We may retain personal information for as long as necessary "
+      ]
+    },
+    {
+      "name": "PurchaserCredentialingProcess",
+      "non_null": 667,
+      "blank_pct": 6.6,
+      "n_unique": 375,
+      "examples": [
+        "Yes, Blis implements a purchaser credentials process",
+        "We seek to work only with reputable organizations. After all",
+        "No"
+      ]
+    },
+    {
+      "name": "SecurityBreachesLastYear",
+      "non_null": 714,
+      "blank_pct": 0.0,
+      "n_unique": 3,
+      "examples": [
+        "0",
+        "1",
+        "3"
+      ]
+    },
+    {
+      "name": "TotalConsumersAffectedByBreaches",
+      "non_null": 714,
+      "blank_pct": 0.0,
+      "n_unique": 8,
+      "examples": [
+        "0",
+        "138",
+        "3946456"
+      ]
+    },
+    {
+      "name": "HasActualKnowledgeOfMinorsData",
+      "non_null": 714,
+      "blank_pct": 0.0,
+      "n_unique": 2,
+      "examples": [
+        "False",
+        "True"
+      ]
+    },
+    {
+      "name": "ProvideStatementOnMinorsDataPractices",
+      "non_null": 86,
+      "blank_pct": 88.0,
+      "n_unique": 43,
+      "examples": [
+        "While NFocus Consulting possesses BPI about a household, it ",
+        "We will not knowingly accept or collect personal information",
+        "We will not knowingly accept or collect personal information"
+      ]
+    },
+    {
+      "name": "AdditionalInfoOnDataPractices",
+      "non_null": 347,
+      "blank_pct": 51.4,
+      "n_unique": 202,
+      "examples": [
+        "\n",
+        "Our products and services are designed only for use in marke",
+        "More information about our privacy practices can be found at"
+      ]
+    },
+    {
+      "name": "ExpirationDate",
+      "non_null": 714,
+      "blank_pct": 0.0,
+      "n_unique": 2,
+      "examples": [
+        "2/1/2027 12:00:00 AM",
+        "2/1/2026 12:00:00 AM"
+      ]
+    },
+    {
+      "name": "Applicant FirstName",
+      "non_null": 713,
+      "blank_pct": 0.1,
+      "n_unique": 326,
+      "examples": [
+        "Kelly",
+        "Mary",
+        "Joseph"
+      ]
+    },
+    {
+      "name": "Applicant LastName",
+      "non_null": 713,
+      "blank_pct": 0.1,
+      "n_unique": 401,
+      "examples": [
+        "Jacobson Collins",
+        "Edquist",
+        "Scarim"
+      ]
+    },
+    {
+      "name": "Applicant EmailAddress",
+      "non_null": 714,
+      "blank_pct": 0.0,
+      "n_unique": 431,
+      "examples": [
+        "privacy@blis.com",
+        "privacy@wiland.com",
+        "support@lookify.io"
+      ]
+    },
+    {
+      "name": "Applicant ContactNo",
+      "non_null": 436,
+      "blank_pct": 38.9,
+      "n_unique": 302,
+      "examples": [
+        "3034858686",
+        "9547761197",
+        "7035873514"
+      ]
+    },
+    {
+      "name": "Applicant StreetAddress1",
+      "non_null": 713,
+      "blank_pct": 0.1,
+      "n_unique": 471,
+      "examples": [
+        "350 5th Ave Ste 6440",
+        "7420 E. Dry Creek Parkway",
+        "3571 Far West Blvd"
+      ]
+    },
+    {
+      "name": "Applicant StreetAddress2",
+      "non_null": 286,
+      "blank_pct": 59.9,
+      "n_unique": 186,
+      "examples": [
+        "#3694",
+        "Suite 200",
+        "Ste 101"
+      ]
+    },
+    {
+      "name": "Applicant City",
+      "non_null": 712,
+      "blank_pct": 0.3,
+      "n_unique": 226,
+      "examples": [
+        "New York",
+        "Niwot",
+        "Austin"
+      ]
+    },
+    {
+      "name": "Applicant State",
+      "non_null": 706,
+      "blank_pct": 1.1,
+      "n_unique": 41,
+      "examples": [
+        "NY",
+        "CO",
+        "TX"
+      ]
+    },
+    {
+      "name": "Applicant ZIP5",
+      "non_null": 701,
+      "blank_pct": 1.8,
+      "n_unique": 302,
+      "examples": [
+        "10118",
+        "80503",
+        "78731"
+      ]
+    },
+    {
+      "name": "Applicant ZIP4",
+      "non_null": 415,
+      "blank_pct": 41.9,
+      "n_unique": 258,
+      "examples": [
+        "6401",
+        "1113",
+        "2336"
+      ]
+    },
+    {
+      "name": "Applicant Country",
+      "non_null": 714,
+      "blank_pct": 0.0,
+      "n_unique": 6,
+      "examples": [
+        "USA",
+        "CAN",
+        "GBR"
+      ]
+    },
+    {
+      "name": "Applicant PostalCode",
+      "non_null": 0,
+      "blank_pct": 100.0,
+      "n_unique": 0,
+      "examples": []
+    },
+    {
+      "name": "Applicant Province",
+      "non_null": 11,
+      "blank_pct": 98.5,
+      "n_unique": 9,
+      "examples": [
+        "ON",
+        "United Kingdom",
+        "Ontario"
+      ]
+    }
+  ]
+}

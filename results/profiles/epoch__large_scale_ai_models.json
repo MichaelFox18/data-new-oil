@@ -1,0 +1,384 @@
+{
+  "file": "data/raw/epoch/large_scale_ai_models.csv",
+  "encoding": "utf-8",
+  "delimiter": ",",
+  "rows": 515,
+  "cols": 34,
+  "duplicate_full_rows": 0,
+  "columns": [
+    {
+      "name": "Model",
+      "non_null": 515,
+      "blank_pct": 0.0,
+      "n_unique": 514,
+      "examples": [
+        "Composer 2.5",
+        "MiMo-V2.5-Pro",
+        "DeepSeek-V4-Pro"
+      ]
+    },
+    {
+      "name": "Domain",
+      "non_null": 511,
+      "blank_pct": 0.8,
+      "n_unique": 53,
+      "examples": [
+        "Language",
+        "Multimodal,Language,Vision",
+        "Language,Multimodal"
+      ]
+    },
+    {
+      "name": "Task",
+      "non_null": 511,
+      "blank_pct": 0.8,
+      "n_unique": 215,
+      "examples": [
+        "Coding",
+        "Language modeling/generation,Question answering",
+        "Question answering,Language modeling/generation"
+      ]
+    },
+    {
+      "name": "Authors",
+      "non_null": 266,
+      "blank_pct": 48.3,
+      "n_unique": 201,
+      "examples": [
+        "Eunbi Choi, Kibong Choi, Sehyun Chun, Seokhee Hong, Junwon H",
+        "Varun Singh, Lucas Krauss, Sami Jaghouar, Matej Sirovatka, C",
+        "Aohan Zeng, Xin Lv, Zhenyu Hou, Zhengxiao Du, Qinkai Zheng, "
+      ]
+    },
+    {
+      "name": "Model accessibility",
+      "non_null": 491,
+      "blank_pct": 4.7,
+      "n_unique": 6,
+      "examples": [
+        "Open weights (unrestricted)",
+        "API access",
+        "Hosted access (no API)"
+      ]
+    },
+    {
+      "name": "Link",
+      "non_null": 507,
+      "blank_pct": 1.6,
+      "n_unique": 421,
+      "examples": [
+        "https://cursor.com/blog/composer-2-5",
+        "https://mimo.xiaomi.com/mimo-v2-5-pro/",
+        "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main"
+      ]
+    },
+    {
+      "name": "Citations",
+      "non_null": 76,
+      "blank_pct": 85.2,
+      "n_unique": 64,
+      "examples": [
+        "83.0",
+        "16.0",
+        "130.0"
+      ]
+    },
+    {
+      "name": "Reference",
+      "non_null": 458,
+      "blank_pct": 11.1,
+      "n_unique": 370,
+      "examples": [
+        "Introducing Composer 2.5",
+        "Xiaomi MiMo-V2.5-Pro",
+        "DeepSeek-V4: Towards Highly Efficient Million-Token Context "
+      ]
+    },
+    {
+      "name": "Publication date",
+      "non_null": 515,
+      "blank_pct": 0.0,
+      "n_unique": 340,
+      "examples": [
+        "2026-05-18",
+        "2026-04-27",
+        "2026-04-24"
+      ]
+    },
+    {
+      "name": "Organization",
+      "non_null": 515,
+      "blank_pct": 0.0,
+      "n_unique": 134,
+      "examples": [
+        "Cursor",
+        "Xiaomi Corp",
+        "DeepSeek"
+      ]
+    },
+    {
+      "name": "Parameters",
+      "non_null": 347,
+      "blank_pct": 32.6,
+      "n_unique": 168,
+      "examples": [
+        "1040000000000.0",
+        "1020000000000.0",
+        "1600000000000.0"
+      ]
+    },
+    {
+      "name": "Parameters notes",
+      "non_null": 314,
+      "blank_pct": 39.0,
+      "n_unique": 255,
+      "examples": [
+        "Based on Kimi K2.5; 1.04T total, 32B active parameters",
+        "\"MiMo-V2.5-Pro is a 1.02T-parameter Mixture-of-Experts model",
+        "1.6T total, 49B active"
+      ]
+    },
+    {
+      "name": "Training compute (FLOP)",
+      "non_null": 307,
+      "blank_pct": 40.4,
+      "n_unique": 274,
+      "examples": [
+        "3.87e+25",
+        "6.804e+24",
+        "9.702e+24"
+      ]
+    },
+    {
+      "name": "Training compute notes",
+      "non_null": 374,
+      "blank_pct": 27.4,
+      "n_unique": 357,
+      "examples": [
+        "Said by Cursor that 85% of the total compute was performed b",
+        "6 FLOPS/token/active parameter * 27e12 tokens * 42e9 active ",
+        "6 * 49e9 active parameters * 33e12 tokens = 9.702E24 for pre"
+      ]
+    },
+    {
+      "name": "Training dataset",
+      "non_null": 370,
+      "blank_pct": 28.2,
+      "n_unique": 74,
+      "examples": [
+        "Unspecified unreleased",
+        "Dolma 3 Mix",
+        "UniRef100,MERC,SRC,AntiRef,OMG,PDB (Protein Data Bank),ESM3 "
+      ]
+    },
+    {
+      "name": "Training dataset notes",
+      "non_null": 246,
+      "blank_pct": 52.2,
+      "n_unique": 199,
+      "examples": [
+        "Pre-training included image caption data, interleaved image-",
+        "\"We extend the training token budget for all the training st",
+        "1T tokens of ViT Training data\n15K of joint pre-training of "
+      ]
+    },
+    {
+      "name": "(DEPRECATED) Training dataset size (datapoints)",
+      "non_null": 244,
+      "blank_pct": 52.6,
+      "n_unique": 125,
+      "examples": [
+        "20000000000000.0",
+        "22500000000000.0",
+        "17500000000000.0"
+      ]
+    },
+    {
+      "name": "Dataset size notes",
+      "non_null": 260,
+      "blank_pct": 49.5,
+      "n_unique": 226,
+      "examples": [
+        "11T tokens",
+        "Model card lists 5.50T training tokens for OLMo 3 32B (and 5",
+        "\"Our final released Kimi Linear checkpoint is pretrained usi"
+      ]
+    },
+    {
+      "name": "Training time (hours)",
+      "non_null": 67,
+      "blank_pct": 87.0,
+      "n_unique": 55,
+      "examples": [
+        "3240.0",
+        "1344.0",
+        "2880.0"
+      ]
+    },
+    {
+      "name": "Training time notes",
+      "non_null": 93,
+      "blank_pct": 81.9,
+      "n_unique": 88,
+      "examples": [
+        "K-EXAONE was trained using a cloud-based GPU environment. Th",
+        "In total, approximately 56 days elapsed from the start of tr",
+        "4 months (from Jaime's correspondence with the GLM team)\n\n4 "
+      ]
+    },
+    {
+      "name": "Training hardware",
+      "non_null": 176,
+      "blank_pct": 65.8,
+      "n_unique": 37,
+      "examples": [
+        "NVIDIA B300 (Blackwell Ultra)",
+        "NVIDIA GB200,NVIDIA GB300 (Blackwell Ultra)",
+        "Huawei Ascend 910C"
+      ]
+    },
+    {
+      "name": "Confidence",
+      "non_null": 513,
+      "blank_pct": 0.4,
+      "n_unique": 5,
+      "examples": [
+        "Likely",
+        "Confident",
+        "Unknown"
+      ]
+    },
+    {
+      "name": "Abstract",
+      "non_null": 443,
+      "blank_pct": 14.0,
+      "n_unique": 377,
+      "examples": [
+        "Today, we are releasing and open-sourcing MiMo-V2.5-Pro. It ",
+        "We present a preview version of DeepSeek-V4 series, includin",
+        "We present a preview version of DeepSeek-V4 series, includin"
+      ]
+    },
+    {
+      "name": "Country (of organization)",
+      "non_null": 515,
+      "blank_pct": 0.0,
+      "n_unique": 36,
+      "examples": [
+        "United States of America",
+        "China",
+        "Korea (Republic of)"
+      ]
+    },
+    {
+      "name": "Base model",
+      "non_null": 24,
+      "blank_pct": 95.3,
+      "n_unique": 16,
+      "examples": [
+        "Whisper v2,Qwen3-32B",
+        "DeepSeek-V3.1-Terminus",
+        "DeepSeek-V3"
+      ]
+    },
+    {
+      "name": "Finetune compute (FLOP)",
+      "non_null": 24,
+      "blank_pct": 95.3,
+      "n_unique": 23,
+      "examples": [
+        "2.78256e+24",
+        "5.9e+23",
+        "1.86258e+23"
+      ]
+    },
+    {
+      "name": "Finetune compute notes",
+      "non_null": 26,
+      "blank_pct": 95.0,
+      "n_unique": 25,
+      "examples": [
+        "6 FLOP/parameter/token * 34100000000 parameters * 1360000000",
+        "Continued pretraining compute: 6 * 37B * 943.7B = 2.095e23 F",
+        "6 FLOP/parameter/token * 671000000000 parameters * 839000000"
+      ]
+    },
+    {
+      "name": "Hardware quantity",
+      "non_null": 99,
+      "blank_pct": 80.8,
+      "n_unique": 36,
+      "examples": [
+        "512.0",
+        "1024.0",
+        "4096.0"
+      ]
+    },
+    {
+      "name": "Hardware utilization (MFU)",
+      "non_null": 37,
+      "blank_pct": 92.8,
+      "n_unique": 33,
+      "examples": [
+        "0.47",
+        "0.3",
+        "0.38"
+      ]
+    },
+    {
+      "name": "Training code accessibility",
+      "non_null": 471,
+      "blank_pct": 8.5,
+      "n_unique": 4,
+      "examples": [
+        "Unreleased",
+        "Open source",
+        "Open (restricted use)"
+      ]
+    },
+    {
+      "name": "Accessibility notes",
+      "non_null": 294,
+      "blank_pct": 42.9,
+      "n_unique": 256,
+      "examples": [
+        "License at https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B",
+        "Modified Apache 2.0 license at https://huggingface.co/datase",
+        "MIT license listed on https://huggingface.co/zai-org/GLM-5 w"
+      ]
+    },
+    {
+      "name": "Hardware utilization (HFU)",
+      "non_null": 14,
+      "blank_pct": 97.3,
+      "n_unique": 11,
+      "examples": [
+        "0.565",
+        "0.5772",
+        "0.327"
+      ]
+    },
+    {
+      "name": "Training compute cost (cloud)",
+      "non_null": 13,
+      "blank_pct": 97.5,
+      "n_unique": 13,
+      "examples": [
+        "849737163.9529365",
+        "175966627.18329293",
+        "67898317.22964796"
+      ]
+    },
+    {
+      "name": "Training compute cost (upfront)",
+      "non_null": 17,
+      "blank_pct": 96.7,
+      "n_unique": 17,
+      "examples": [
+        "10717356897.243427",
+        "1780094856.8197687",
+        "4446013316.520631"
+      ]
+    }
+  ]
+}

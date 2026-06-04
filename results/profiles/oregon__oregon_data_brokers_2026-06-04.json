@@ -1,0 +1,108 @@
+{
+  "file": "data/raw/oregon/oregon_data_brokers_2026-06-04.csv",
+  "encoding": "cp1252",
+  "delimiter": "|",
+  "rows": 352,
+  "cols": 10,
+  "duplicate_full_rows": 0,
+  "columns": [
+    {
+      "name": "license_no",
+      "non_null": 352,
+      "blank_pct": 0.0,
+      "n_unique": 352,
+      "examples": [
+        "DATA-00009",
+        "DATA-00010",
+        "DATA-00011"
+      ]
+    },
+    {
+      "name": "profession_name",
+      "non_null": 313,
+      "blank_pct": 11.1,
+      "n_unique": 1,
+      "examples": [
+        "DFR-Data Broker"
+      ]
+    },
+    {
+      "name": "license_type_name",
+      "non_null": 313,
+      "blank_pct": 11.1,
+      "n_unique": 1,
+      "examples": [
+        "Data Broker"
+      ]
+    },
+    {
+      "name": "full_name",
+      "non_null": 313,
+      "blank_pct": 11.1,
+      "n_unique": 309,
+      "examples": [
+        "Crunchbase Inc",
+        "DEALERDIRECT LLC",
+        "Deloitte Consulting LLP"
+      ]
+    },
+    {
+      "name": "addr_phone",
+      "non_null": 313,
+      "blank_pct": 11.1,
+      "n_unique": 295,
+      "examples": [
+        "4158492049",
+        "844-889-7367",
+        "3033053906"
+      ]
+    },
+    {
+      "name": "doing_business_as",
+      "non_null": 138,
+      "blank_pct": 60.8,
+      "n_unique": 126,
+      "examples": [
+        "Crunchbase",
+        "FordDirect",
+        "HealthWise Data"
+      ]
+    },
+    {
+      "name": "addr_line_4",
+      "non_null": 312,
+      "blank_pct": 11.4,
+      "n_unique": 256,
+      "examples": [
+        "San Francisco CA  94104",
+        "Dearborn MI  48126",
+        "new york NY  10112"
+      ]
+    },
+    {
+      "name": "license_status_name",
+      "non_null": 313,
+      "blank_pct": 11.1,
+      "n_unique": 1,
+      "examples": [
+        "Active"
+      ]
+    },
+    {
+      "name": "expiration_date",
+      "non_null": 313,
+      "blank_pct": 11.1,
+      "n_unique": 1,
+      "examples": [
+        "12/31/2026 12:00:00 AM"
+      ]
+    },
+    {
+      "name": "Unnamed: 9",
+      "non_null": 0,
+      "blank_pct": 100.0,
+      "n_unique": 0,
+      "examples": []
+    }
+  ]
+}

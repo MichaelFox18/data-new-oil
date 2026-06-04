@@ -1,0 +1,831 @@
+{
+  "file": "data/raw/cppa/registry.csv",
+  "encoding": "utf-8",
+  "delimiter": ",",
+  "rows": 581,
+  "cols": 77,
+  "duplicate_full_rows": 0,
+  "columns": [
+    {
+      "name": "Data broker name:",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 581,
+      "examples": [
+        "01Advertising Inc.",
+        "33 Mile Radius LLC",
+        "33Across, Inc."
+      ]
+    },
+    {
+      "name": "Doing Business As (DBA), if applicable:",
+      "non_null": 251,
+      "blank_pct": 56.8,
+      "n_unique": 250,
+      "examples": [
+        "360 Media Direct; bPerx; AdSmith; Subco; ClicknRead; WRSS",
+        "Above Data",
+        "ActivImpact"
+      ]
+    },
+    {
+      "name": "Data broker primary website:",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 564,
+      "examples": [
+        "https://www.01advertising.com",
+        "www.33mileradius.com",
+        "www.33across.com"
+      ]
+    },
+    {
+      "name": "Data broker primary contact email address:",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 556,
+      "examples": [
+        "privacy@01advertising.com",
+        "operations@ignitevisibility.com",
+        "privacy@33across.com"
+      ]
+    },
+    {
+      "name": "Data broker primary phone number: [optional]",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 543,
+      "examples": [
+        "9496099696",
+        "(619) 752-1955",
+        "18882974094"
+      ]
+    },
+    {
+      "name": "Data broker primary street address:",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 535,
+      "examples": [
+        "3857 Birch St, PMB 5032",
+        "770 Irvine Center Dr, Suite 430",
+        "228 Park Avenue South PMB 74008"
+      ]
+    },
+    {
+      "name": "Data broker city:",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 257,
+      "examples": [
+        "Newport Beach",
+        "Irvine",
+        "New York"
+      ]
+    },
+    {
+      "name": "Data broker state:",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 93,
+      "examples": [
+        "CA",
+        "California",
+        "NY"
+      ]
+    },
+    {
+      "name": "Data broker zip code:",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 401,
+      "examples": [
+        "92660",
+        "92618",
+        "10003"
+      ]
+    },
+    {
+      "name": "Data broker country:",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 14,
+      "examples": [
+        "UNITED STATES",
+        "GERMANY",
+        "NEW ZEALAND"
+      ]
+    },
+    {
+      "name": "Data broker's primary website that contains details on how consumers can exercise their CA Consumer Privacy rights:",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 562,
+      "examples": [
+        "https://www.01advertising.com/legal/dsar/",
+        "www.33mileradius.com",
+        "www.33across.com"
+      ]
+    },
+    {
+      "name": "Data broker collects personal information of minors:",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 2,
+      "examples": [
+        "No",
+        "Yes"
+      ]
+    },
+    {
+      "name": "Data broker collects consumers\u2019 account logins or numbers with security codes that grant access to third\u2011party accounts",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 2,
+      "examples": [
+        "No",
+        "Yes"
+      ]
+    },
+    {
+      "name": "Data broker collects consumers\u2019 government\u2011issued identification numbers used to verify an individual\u2019s identity",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 2,
+      "examples": [
+        "No",
+        "Yes"
+      ]
+    },
+    {
+      "name": "Data broker collects consumers' citizenship data, including immigration status",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 2,
+      "examples": [
+        "No",
+        "Yes"
+      ]
+    },
+    {
+      "name": "Data broker collects consumers' union membership status",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 2,
+      "examples": [
+        "No",
+        "Yes"
+      ]
+    },
+    {
+      "name": "Data broker collects consumers' sexual orientation status",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 2,
+      "examples": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "name": "Data broker collects consumers' gender identity and gender expression data",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 2,
+      "examples": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "name": "Data broker collects consumers' biometric data",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 2,
+      "examples": [
+        "No",
+        "Yes"
+      ]
+    },
+    {
+      "name": "Data broker collects consumers' precise geolocation",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 2,
+      "examples": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "name": "Data broker collects consumers\u2019 reproductive health care data:",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 2,
+      "examples": [
+        "No",
+        "Yes"
+      ]
+    },
+    {
+      "name": "Data broker shared or sold consumers' data to a foreign actor in the past year",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 2,
+      "examples": [
+        "No",
+        "Yes"
+      ]
+    },
+    {
+      "name": "Data broker shared or sold consumers' data to the federal government in the past year",
+      "non_null": 580,
+      "blank_pct": 0.2,
+      "n_unique": 2,
+      "examples": [
+        "No",
+        "Yes"
+      ]
+    },
+    {
+      "name": "Data broker shared or sold consumers' data to other state governments in the past year",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 2,
+      "examples": [
+        "No",
+        "Yes"
+      ]
+    },
+    {
+      "name": "Data broker shared or sold consumers\u2019 data to law enforcement in the past year, except when required by subpoena or court order",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 2,
+      "examples": [
+        "No",
+        "Yes"
+      ]
+    },
+    {
+      "name": "Data broker shared or sold consumers\u2019 data to a developer of a GenAI system or model in the past year",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 2,
+      "examples": [
+        "No",
+        "Yes"
+      ]
+    },
+    {
+      "name": "The data broker or any of its subsidiaries is regulated by the federal Fair Credit Reporting Act",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 2,
+      "examples": [
+        "No",
+        "Yes"
+      ]
+    },
+    {
+      "name": "If the data broker or its subsidiaries are regulated by the FCRA, describe the types of personal information covered",
+      "non_null": 17,
+      "blank_pct": 97.1,
+      "n_unique": 17,
+      "examples": [
+        "Alliant collects financial information and licenses the data",
+        "Name, Address, e-mail address, phone number, credit informat",
+        "AutoWeb activities subject to the Fair Credit Reporting Act "
+      ]
+    },
+    {
+      "name": "If the data broker or its subsidiaries are regulated by the FCRA, describe the specific products or services covered",
+      "non_null": 17,
+      "blank_pct": 97.1,
+      "n_unique": 16,
+      "examples": [
+        "Alliant maintains a FCRA compliant database which Alliant us",
+        "Regulated prescreen consumer data",
+        "AutoWeb's collection and use of this data are solely for emp"
+      ]
+    },
+    {
+      "name": "If the data broker or its subsidiaries are regulated by the FCRA, describe the percentage of data activities covered",
+      "non_null": 17,
+      "blank_pct": 97.1,
+      "n_unique": 16,
+      "examples": [
+        "~6%",
+        "70",
+        "Less than 1% of our total data collection and sales are subj"
+      ]
+    },
+    {
+      "name": "The data broker or any of its subsidiaries is regulated by the Gramm\u2011Leach\u2011Bliley Act (GLBA) and implementing regulations",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 2,
+      "examples": [
+        "No",
+        "Yes"
+      ]
+    },
+    {
+      "name": "If the data broker or its subsidiaries are regulated by the GLBA, describe the types of personal information covered",
+      "non_null": 19,
+      "blank_pct": 96.7,
+      "n_unique": 19,
+      "examples": [
+        "Name, Address, e-mail address, phone number, credit informat",
+        "Our Aristotle Exchange subsidiary collects customer identity",
+        "Drivers History Information Sales may collect or process non"
+      ]
+    },
+    {
+      "name": "If the data broker or its subsidiaries are regulated by the GLBA, describe the specific products or services covered",
+      "non_null": 19,
+      "blank_pct": 96.7,
+      "n_unique": 19,
+      "examples": [
+        "Regulated prescreen consumer data",
+        "Commodities exchange",
+        "Fraud prevention services"
+      ]
+    },
+    {
+      "name": "If the data broker or its subsidiaries are regulated by the GLBA, describe the percentage of data activities covered",
+      "non_null": 19,
+      "blank_pct": 96.7,
+      "n_unique": 18,
+      "examples": [
+        "70",
+        "1%",
+        "35%"
+      ]
+    },
+    {
+      "name": "The data broker or any of its subsidiaries is regulated by the California Insurance Information and Privacy Protection Act (IIPPA)",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 2,
+      "examples": [
+        "No",
+        "Yes"
+      ]
+    },
+    {
+      "name": "If the data broker or its subsidiaries are regulated by the IIPPA, describe the types of personal information covered",
+      "non_null": 1,
+      "blank_pct": 99.8,
+      "n_unique": 1,
+      "examples": [
+        "N/A"
+      ]
+    },
+    {
+      "name": "If the data broker or its subsidiaries are regulated by the IIPPA, describe the specific products or services covered",
+      "non_null": 1,
+      "blank_pct": 99.8,
+      "n_unique": 1,
+      "examples": [
+        "Fraud prevention, identify verification, and other risk mana"
+      ]
+    },
+    {
+      "name": "If the data broker or its subsidiaries are regulated by the IIPPA, describe the percentage of data activities covered",
+      "non_null": 1,
+      "blank_pct": 99.8,
+      "n_unique": 1,
+      "examples": [
+        "0%"
+      ]
+    },
+    {
+      "name": "The data broker or any of its subsidiaries is regulated by the California Confidentiality of Medical Information Act (CMIA)",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 2,
+      "examples": [
+        "No",
+        "Yes"
+      ]
+    },
+    {
+      "name": "If the data broker or its subsidiaries are regulated by the CMIA, describe the types of personal information covered",
+      "non_null": 6,
+      "blank_pct": 99.0,
+      "n_unique": 6,
+      "examples": [
+        "Employee identifiers, medical reports and records, and benef",
+        "N/A",
+        "As a business associate to covered entities we receive PHI i"
+      ]
+    },
+    {
+      "name": "If the data broker or its subsidiaries are regulated by the CMIA, describe the specific products or services covered",
+      "non_null": 6,
+      "blank_pct": 99.0,
+      "n_unique": 6,
+      "examples": [
+        "Employee benefit services. GM does not act as a data broker ",
+        "Fraud prevention, identify verification, and other risk mana",
+        "As a business associate to covered entities we receive PHI i"
+      ]
+    },
+    {
+      "name": "If the data broker or its subsidiaries are regulated by the CMIA, describe the percentage of data activities covered",
+      "non_null": 6,
+      "blank_pct": 99.0,
+      "n_unique": 6,
+      "examples": [
+        "Minimal, to support employment and benefits administration o",
+        "0%",
+        "Data regulated by CMIA is less than 1% of total FinThrive sa"
+      ]
+    },
+    {
+      "name": "The data broker or its subsidiaries are regulated by the HIPAA privacy, security, and breach\u2011notification rules",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 2,
+      "examples": [
+        "No",
+        "Yes"
+      ]
+    },
+    {
+      "name": "If the data broker or its subsidiaries are regulated by HIPAA, describe the types of personal information covered",
+      "non_null": 29,
+      "blank_pct": 95.0,
+      "n_unique": 27,
+      "examples": [
+        "As a Business Associate and only in the event that one of ou",
+        "Under HIPAA, covered entities include health plans, health c",
+        "Name, Address, Phone"
+      ]
+    },
+    {
+      "name": "If the data broker or its subsidiaries are regulated by HIPAA, describe the specific products or services covered",
+      "non_null": 29,
+      "blank_pct": 95.0,
+      "n_unique": 28,
+      "examples": [
+        "As provided in our Privacy Notice",
+        "Under HIPAA, covered entities include health plans, health c",
+        "List rental and look a like profiling"
+      ]
+    },
+    {
+      "name": "If the data broker or its subsidiaries are regulated by HIPAA, describe the percentage of data activities covered",
+      "non_null": 29,
+      "blank_pct": 95.0,
+      "n_unique": 25,
+      "examples": [
+        "As provided in our Privacy Notice",
+        "Under HIPAA, covered entities include health plans, health c",
+        "Less than 25%"
+      ]
+    },
+    {
+      "name": "Requests to delete - Total requests received",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 332,
+      "examples": [
+        "0",
+        "62584",
+        "10478"
+      ]
+    },
+    {
+      "name": "Requests to delete - Total requests received - Complied in whole",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 299,
+      "examples": [
+        "0",
+        "394",
+        "2010"
+      ]
+    },
+    {
+      "name": "Requests to delete - Total requests received - Complied in part",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 37,
+      "examples": [
+        "0",
+        "408",
+        "19"
+      ]
+    },
+    {
+      "name": "Requests to delete - Total requests received - Denied",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 114,
+      "examples": [
+        "0",
+        "62190",
+        "8468"
+      ]
+    },
+    {
+      "name": "Requests to delete - The number of days to respond substantively to a request to delete in 2024 - Mean",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 47,
+      "examples": [
+        "0",
+        "12",
+        "29"
+      ]
+    },
+    {
+      "name": "Requests to delete - The number of days to respond substantively to a request to delete in 2024 - Median",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 46,
+      "examples": [
+        "0",
+        "12",
+        "10"
+      ]
+    },
+    {
+      "name": "Requests to know what personal information is being collected - Total requests received",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 128,
+      "examples": [
+        "0",
+        "1348",
+        "128"
+      ]
+    },
+    {
+      "name": "Requests to know what personal information is being collected - Total requests received - Complied in whole",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 126,
+      "examples": [
+        "0",
+        "942",
+        "127"
+      ]
+    },
+    {
+      "name": "Requests to know what personal information is being collected - Total requests received - Complied in part",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 20,
+      "examples": [
+        "0",
+        "9",
+        "11"
+      ]
+    },
+    {
+      "name": "Requests to know what personal information is being collected - Total requests received - Denied",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 48,
+      "examples": [
+        "0",
+        "406",
+        "1"
+      ]
+    },
+    {
+      "name": "Requests to know what personal information is being collected - The number of days to respond substantively to a request to know in 2024 - Mean",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 45,
+      "examples": [
+        "0",
+        "29",
+        "8"
+      ]
+    },
+    {
+      "name": "Requests to know what personal information is being collected - The number of days to respond substantively to a request to know in 2024 - Median",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 46,
+      "examples": [
+        "0",
+        "10",
+        "6"
+      ]
+    },
+    {
+      "name": "Requests to know what personal information is sold or shared - Total requests received",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 112,
+      "examples": [
+        "0",
+        "1348",
+        "11"
+      ]
+    },
+    {
+      "name": "Requests to know what personal information is sold or shared - Total requests received - Complied in whole",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 111,
+      "examples": [
+        "0",
+        "942",
+        "11"
+      ]
+    },
+    {
+      "name": "Requests to know what personal information is sold or shared - Total requests received - Complied in part",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 12,
+      "examples": [
+        "0",
+        "9",
+        "30"
+      ]
+    },
+    {
+      "name": "Requests to know what personal information is sold or shared - Total requests received - Denied",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 41,
+      "examples": [
+        "0",
+        "406",
+        "25"
+      ]
+    },
+    {
+      "name": "Requests to know what personal information is sold or shared - The number of days to respond substantively to a request to know what personal information is sold or shared in 2024 - Mean",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 39,
+      "examples": [
+        "0",
+        "29",
+        "17"
+      ]
+    },
+    {
+      "name": "Requests to know what personal information is sold or shared - The number of days to respond substantively to a request to know what personal information is sold or shared in 2024 - Median",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 41,
+      "examples": [
+        "0",
+        "10",
+        "18"
+      ]
+    },
+    {
+      "name": "Requests to opt out of sale or sharing - Total requests received",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 312,
+      "examples": [
+        "0",
+        "62584",
+        "13563"
+      ]
+    },
+    {
+      "name": "Requests to opt out of sale or sharing - Total requests received - Complied in whole",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 287,
+      "examples": [
+        "0",
+        "62584",
+        "11825"
+      ]
+    },
+    {
+      "name": "Requests to opt out of sale or sharing - Total requests received - Complied in part",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 29,
+      "examples": [
+        "0",
+        "133",
+        "429"
+      ]
+    },
+    {
+      "name": "Requests to opt out of sale or sharing - Total requests received - Denied",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 107,
+      "examples": [
+        "0",
+        "1738",
+        "1"
+      ]
+    },
+    {
+      "name": "Requests to opt out of sale or sharing - The number of days to respond substantively to a request to know in 2024 - Mean",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 45,
+      "examples": [
+        "0",
+        "12",
+        "29"
+      ]
+    },
+    {
+      "name": "Requests to opt out of sale or sharing - The number of days to respond substantively to a request to know in 2024 - Median",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 44,
+      "examples": [
+        "0",
+        "12",
+        "10"
+      ]
+    },
+    {
+      "name": "Requests to limit the use and disclosure of sensitive personal information - Total requests received",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 83,
+      "examples": [
+        "0",
+        "268150",
+        "462"
+      ]
+    },
+    {
+      "name": "Requests to limit the use and disclosure of sensitive personal information - Total requests received - Complied in whole",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 80,
+      "examples": [
+        "0",
+        "261194",
+        "461"
+      ]
+    },
+    {
+      "name": "Requests to limit the use and disclosure of sensitive personal information - Total requests received - Complied in part",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 9,
+      "examples": [
+        "0",
+        "9",
+        "56"
+      ]
+    },
+    {
+      "name": "Requests to limit the use and disclosure of sensitive personal information - Total requests received - Denied",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 22,
+      "examples": [
+        "0",
+        "6956",
+        "1"
+      ]
+    },
+    {
+      "name": "Requests to limit the use and disclosure of sensitive personal information - The number of days to respond substantively to a request to know in 2024 - Mean",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 30,
+      "examples": [
+        "0",
+        "1",
+        "10"
+      ]
+    },
+    {
+      "name": "Requests to limit the use and disclosure of sensitive personal information - The number of days to respond substantively to a request to know in 2024 - Median",
+      "non_null": 581,
+      "blank_pct": 0.0,
+      "n_unique": 30,
+      "examples": [
+        "0",
+        "1",
+        "21"
+      ]
+    },
+    {
+      "name": "Additional Context or Comments:  [optional]",
+      "non_null": 154,
+      "blank_pct": 73.5,
+      "n_unique": 141,
+      "examples": [
+        "Collection of Minor Data Clarification: Acxiom does not sell",
+        "Affinity Solutions, Inc. is a provider of technology, analyt",
+        "We collect, aggregate, and transfer publicly available infor"
+      ]
+    }
+  ]
+}

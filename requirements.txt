@@ -12,6 +12,7 @@
 # data wrangling
 pandas>=2.2
 pyarrow>=16.0          # parquet for data/interim
+openpyxl>=3.1          # read the Vermont .xlsx registry export
 polars>=1.0            # optional alt engine (CLAUDE.md allows pandas OR polars)
 
 # fetching

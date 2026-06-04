@@ -1,0 +1,524 @@
+{
+  "file": "data/raw/epoch/notable_ai_models.csv",
+  "encoding": "utf-8",
+  "delimiter": ",",
+  "rows": 1026,
+  "cols": 47,
+  "duplicate_full_rows": 0,
+  "columns": [
+    {
+      "name": "Model",
+      "non_null": 1026,
+      "blank_pct": 0.0,
+      "n_unique": 1026,
+      "examples": [
+        "Qwen 3.7 Max",
+        "Composer 2.5",
+        "TML-Interaction-Small"
+      ]
+    },
+    {
+      "name": "Organization",
+      "non_null": 1008,
+      "blank_pct": 1.8,
+      "n_unique": 437,
+      "examples": [
+        "Alibaba",
+        "Cursor",
+        "Thinking Machines"
+      ]
+    },
+    {
+      "name": "Publication date",
+      "non_null": 1022,
+      "blank_pct": 0.4,
+      "n_unique": 833,
+      "examples": [
+        "2026-05-19",
+        "2026-05-18",
+        "2026-05-11"
+      ]
+    },
+    {
+      "name": "Domain",
+      "non_null": 1024,
+      "blank_pct": 0.2,
+      "n_unique": 83,
+      "examples": [
+        "Language",
+        "Language,Multimodal,Audio,Video",
+        "Multimodal,Language,Vision"
+      ]
+    },
+    {
+      "name": "Task",
+      "non_null": 1022,
+      "blank_pct": 0.4,
+      "n_unique": 389,
+      "examples": [
+        "Language modeling/generation,Question answering",
+        "Coding",
+        "Language modeling/generation,Chat,Question answering"
+      ]
+    },
+    {
+      "name": "Parameters",
+      "non_null": 705,
+      "blank_pct": 31.3,
+      "n_unique": 496,
+      "examples": [
+        "1040000000000.0",
+        "276000000000.0",
+        "1020000000000.0"
+      ]
+    },
+    {
+      "name": "Parameters notes",
+      "non_null": 672,
+      "blank_pct": 34.5,
+      "n_unique": 607,
+      "examples": [
+        "Based on Kimi K2.5; 1.04T total, 32B active parameters",
+        "\"The current TML-Interaction-Small is a 276B parameter MoE w",
+        "\"MiMo-V2.5-Pro is a 1.02T-parameter Mixture-of-Experts model"
+      ]
+    },
+    {
+      "name": "Training compute (FLOP)",
+      "non_null": 526,
+      "blank_pct": 48.7,
+      "n_unique": 507,
+      "examples": [
+        "3.87e+25",
+        "6.804e+24",
+        "9.702e+24"
+      ]
+    },
+    {
+      "name": "Training compute notes",
+      "non_null": 615,
+      "blank_pct": 40.1,
+      "n_unique": 599,
+      "examples": [
+        "Said by Cursor that 85% of the total compute was performed b",
+        "6 FLOPS/token/active parameter * 27e12 tokens * 42e9 active ",
+        "6 * 49e9 active parameters * 33e12 tokens = 9.702E24 for pre"
+      ]
+    },
+    {
+      "name": "Training dataset",
+      "non_null": 624,
+      "blank_pct": 39.2,
+      "n_unique": 268,
+      "examples": [
+        "Nemotron-Pretraining-Specialized-v1.1",
+        "Unspecified unreleased",
+        "Dolma 3 Mix"
+      ]
+    },
+    {
+      "name": "Training dataset size (total)",
+      "non_null": 662,
+      "blank_pct": 35.5,
+      "n_unique": 480,
+      "examples": [
+        "27000000000000",
+        "19700000000000",
+        "11000000000000"
+      ]
+    },
+    {
+      "name": "Dataset size notes",
+      "non_null": 561,
+      "blank_pct": 45.3,
+      "n_unique": 542,
+      "examples": [
+        "11T tokens",
+        "Model card lists 5.50T training tokens for OLMo 3 32B (and 5",
+        "\"Kimi K2 was pre-trained on 15.5T tokens\" \nTraining dataset "
+      ]
+    },
+    {
+      "name": "Confidence",
+      "non_null": 951,
+      "blank_pct": 7.3,
+      "n_unique": 4,
+      "examples": [
+        "Confident",
+        "Likely",
+        "Unknown"
+      ]
+    },
+    {
+      "name": "Link",
+      "non_null": 1022,
+      "blank_pct": 0.4,
+      "n_unique": 948,
+      "examples": [
+        "https://qwen.ai/blog?id=qwen3.7",
+        "https://cursor.com/blog/composer-2-5",
+        "https://thinkingmachines.ai/blog/interaction-models/"
+      ]
+    },
+    {
+      "name": "Reference",
+      "non_null": 1008,
+      "blank_pct": 1.8,
+      "n_unique": 927,
+      "examples": [
+        "Qwen3.7: The Agent Frontier",
+        "Introducing Composer 2.5",
+        "Interaction Models: A Scalable Approach to Human-AI Collabor"
+      ]
+    },
+    {
+      "name": "Citations",
+      "non_null": 622,
+      "blank_pct": 39.4,
+      "n_unique": 513,
+      "examples": [
+        "16.0",
+        "333.0",
+        "913.0"
+      ]
+    },
+    {
+      "name": "Authors",
+      "non_null": 881,
+      "blank_pct": 14.1,
+      "n_unique": 798,
+      "examples": [
+        "Aaron Chan, Ahmed Shalaby, Alexander Wettig, Aman Sanger, An",
+        "Aaron Blakeman, Aaron Grattafiori, Aarti Basant, Abhibha Gup",
+        "Carlo Baronio, Ben Pan, Sam Lee, Eric Lu, Steven Cao, Rohan "
+      ]
+    },
+    {
+      "name": "Abstract",
+      "non_null": 858,
+      "blank_pct": 16.4,
+      "n_unique": 802,
+      "examples": [
+        "Today, we\u2019re announcing a research preview of interaction mo",
+        "Today, we are releasing and open-sourcing MiMo-V2.5-Pro. It ",
+        "We present a preview version of DeepSeek-V4 series, includin"
+      ]
+    },
+    {
+      "name": "Organization categorization",
+      "non_null": 1007,
+      "blank_pct": 1.9,
+      "n_unique": 47,
+      "examples": [
+        "Industry",
+        "Research collective",
+        "Academia"
+      ]
+    },
+    {
+      "name": "Country (of organization)",
+      "non_null": 1008,
+      "blank_pct": 1.8,
+      "n_unique": 148,
+      "examples": [
+        "China",
+        "United States of America",
+        "Korea (Republic of)"
+      ]
+    },
+    {
+      "name": "Notability criteria",
+      "non_null": 1026,
+      "blank_pct": 0.0,
+      "n_unique": 39,
+      "examples": [
+        "Discretionary",
+        "Significant use",
+        "Training cost"
+      ]
+    },
+    {
+      "name": "Notability criteria notes",
+      "non_null": 662,
+      "blank_pct": 35.5,
+      "n_unique": 627,
+      "examples": [
+        "Model available by default in Cursor, which has >1M DAU; rea",
+        "Release from a commercially significant lab (e.g. >10B valua",
+        "OpenAI's most powerful public model at release"
+      ]
+    },
+    {
+      "name": "Epochs",
+      "non_null": 262,
+      "blank_pct": 74.5,
+      "n_unique": 114,
+      "examples": [
+        "1.0",
+        "3.0",
+        "2.3"
+      ]
+    },
+    {
+      "name": "Training time (hours)",
+      "non_null": 239,
+      "blank_pct": 76.7,
+      "n_unique": 140,
+      "examples": [
+        "1572.0",
+        "3240.0",
+        "3238.0"
+      ]
+    },
+    {
+      "name": "Training time notes",
+      "non_null": 250,
+      "blank_pct": 75.6,
+      "n_unique": 236,
+      "examples": [
+        "\"Approx. 65.5 days (Net training time excluding downtime)\" p",
+        "K-EXAONE was trained using a cloud-based GPU environment. Th",
+        "Trained on 1,016 H100 GPUs for 4.5 months"
+      ]
+    },
+    {
+      "name": "Training hardware",
+      "non_null": 361,
+      "blank_pct": 64.8,
+      "n_unique": 82,
+      "examples": [
+        "NVIDIA B300 (Blackwell Ultra)",
+        "NVIDIA GB200,NVIDIA GB300 (Blackwell Ultra)",
+        "NVIDIA GB200"
+      ]
+    },
+    {
+      "name": "Hardware quantity",
+      "non_null": 248,
+      "blank_pct": 75.8,
+      "n_unique": 52,
+      "examples": [
+        "2000.0",
+        "512.0",
+        "1016.0"
+      ]
+    },
+    {
+      "name": "Hardware utilization (MFU)",
+      "non_null": 34,
+      "blank_pct": 96.7,
+      "n_unique": 29,
+      "examples": [
+        "0.283",
+        "0.52",
+        "0.1947"
+      ]
+    },
+    {
+      "name": "Training compute cost (2023 USD)",
+      "non_null": 179,
+      "blank_pct": 82.6,
+      "n_unique": 177,
+      "examples": [
+        "9642947.0",
+        "387842678.08636147",
+        "6770000.0"
+      ]
+    },
+    {
+      "name": "Compute cost notes",
+      "non_null": 30,
+      "blank_pct": 97.1,
+      "n_unique": 27,
+      "examples": [
+        "Estimated value of ~$9M - $10M USD (Calculated based on 3.24",
+        "All cloud compute\n",
+        "See https://colab.research.google.com/drive/1nAl9CJi6VFLYZsz"
+      ]
+    },
+    {
+      "name": "Training power draw (W)",
+      "non_null": 214,
+      "blank_pct": 79.1,
+      "n_unique": 208,
+      "examples": [
+        "4672690.306975335",
+        "1398719.3115551586",
+        "701356.0100875632"
+      ]
+    },
+    {
+      "name": "Base model",
+      "non_null": 136,
+      "blank_pct": 86.7,
+      "n_unique": 98,
+      "examples": [
+        "Kimi K2.5",
+        "Qwen3-Next-80B-A3B",
+        "GLM-4.5"
+      ]
+    },
+    {
+      "name": "Finetune compute (FLOP)",
+      "non_null": 45,
+      "blank_pct": 95.6,
+      "n_unique": 45,
+      "examples": [
+        "5.67e+21",
+        "6.1e+23",
+        "1.2934287e+20"
+      ]
+    },
+    {
+      "name": "Finetune compute notes",
+      "non_null": 69,
+      "blank_pct": 93.3,
+      "n_unique": 64,
+      "examples": [
+        "\n",
+        "6 FLOP/parameter/token * 3000000000 active parameters * 3150",
+        "6.1e23 FLOP from these estimations: https://epoch.ai/gradien"
+      ]
+    },
+    {
+      "name": "Batch size",
+      "non_null": 115,
+      "blank_pct": 88.8,
+      "n_unique": 56,
+      "examples": [
+        "8000.0",
+        "18432.0",
+        "74317824.0"
+      ]
+    },
+    {
+      "name": "Batch size notes",
+      "non_null": 111,
+      "blank_pct": 89.2,
+      "n_unique": 91,
+      "examples": [
+        "Multi-stage training strategy:\n    Pre-training Stage 1 (Mai",
+        "ramp up from 2,048, step size 1,024",
+        "18144 * 4096"
+      ]
+    },
+    {
+      "name": "Model accessibility",
+      "non_null": 766,
+      "blank_pct": 25.3,
+      "n_unique": 6,
+      "examples": [
+        "Unreleased",
+        "Open weights (unrestricted)",
+        "API access"
+      ]
+    },
+    {
+      "name": "Training code accessibility",
+      "non_null": 690,
+      "blank_pct": 32.7,
+      "n_unique": 4,
+      "examples": [
+        "Unreleased",
+        "Open source",
+        "Open (restricted use)"
+      ]
+    },
+    {
+      "name": "Inference code accessibility",
+      "non_null": 281,
+      "blank_pct": 72.6,
+      "n_unique": 4,
+      "examples": [
+        "Unreleased",
+        "Open source",
+        "Open access (restricted use)"
+      ]
+    },
+    {
+      "name": "Accessibility notes",
+      "non_null": 458,
+      "blank_pct": 55.4,
+      "n_unique": 434,
+      "examples": [
+        "Accessible through Devin & Windsurf but not directly through",
+        "Modified Apache 2.0 license on https://huggingface.co/Qwen/Q",
+        "Applications are open for early release - \"Grok 4.20 and Gro"
+      ]
+    },
+    {
+      "name": "Numerical format",
+      "non_null": 255,
+      "blank_pct": 75.1,
+      "n_unique": 7,
+      "examples": [
+        "FP8",
+        "NVFP4",
+        "BF16"
+      ]
+    },
+    {
+      "name": "Frontier model",
+      "non_null": 123,
+      "blank_pct": 88.0,
+      "n_unique": 1,
+      "examples": [
+        "True"
+      ]
+    },
+    {
+      "name": "Hardware acquisition cost",
+      "non_null": 343,
+      "blank_pct": 66.6,
+      "n_unique": 57,
+      "examples": [
+        "0.0",
+        "25681613.228096597",
+        "105834295.27828689"
+      ]
+    },
+    {
+      "name": "Hardware utilization (HFU)",
+      "non_null": 16,
+      "blank_pct": 98.4,
+      "n_unique": 15,
+      "examples": [
+        "0.927",
+        "0.565",
+        "0.72"
+      ]
+    },
+    {
+      "name": "Training compute cost (cloud)",
+      "non_null": 25,
+      "blank_pct": 97.6,
+      "n_unique": 25,
+      "examples": [
+        "9642947.0",
+        "849737163.9529365",
+        "175966627.18329293"
+      ]
+    },
+    {
+      "name": "Training compute cost (upfront)",
+      "non_null": 33,
+      "blank_pct": 96.8,
+      "n_unique": 32,
+      "examples": [
+        "10717356897.243427",
+        "1780094856.8197687",
+        "4446013316.520631"
+      ]
+    },
+    {
+      "name": "Open model weights?",
+      "non_null": 766,
+      "blank_pct": 25.3,
+      "n_unique": 2,
+      "examples": [
+        "No",
+        "Yes"
+      ]
+    }
+  ]
+}

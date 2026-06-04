@@ -1,0 +1,670 @@
+{
+  "file": "data/raw/epoch/frontier_ai_models.csv",
+  "encoding": "utf-8",
+  "delimiter": ",",
+  "rows": 137,
+  "cols": 61,
+  "duplicate_full_rows": 0,
+  "columns": [
+    {
+      "name": "Model",
+      "non_null": 137,
+      "blank_pct": 0.0,
+      "n_unique": 137,
+      "examples": [
+        "Grok 4",
+        "Llama 4 Behemoth (preview)",
+        "GPT-4o (Mar 2025)"
+      ]
+    },
+    {
+      "name": "Publication date",
+      "non_null": 137,
+      "blank_pct": 0.0,
+      "n_unique": 123,
+      "examples": [
+        "2025-07-09",
+        "2025-04-05",
+        "2025-03-27"
+      ]
+    },
+    {
+      "name": "Organization",
+      "non_null": 129,
+      "blank_pct": 5.8,
+      "n_unique": 65,
+      "examples": [
+        "xAI",
+        "Meta AI",
+        "OpenAI"
+      ]
+    },
+    {
+      "name": "Training compute (FLOP)",
+      "non_null": 126,
+      "blank_pct": 8.0,
+      "n_unique": 124,
+      "examples": [
+        "5.0000000000001e+26",
+        "5.18400000000001e+25",
+        "3.911001e+25"
+      ]
+    },
+    {
+      "name": "Training compute notes",
+      "non_null": 137,
+      "blank_pct": 0.0,
+      "n_unique": 131,
+      "examples": [
+        "We think that RL relative to pre-compute is between our esti",
+        "Behemoth's training dataset is at least 30T tokens:\nhttps://",
+        "Training compute estimated to be 3.8e25 FLOP from benchmark "
+      ]
+    },
+    {
+      "name": "Domain",
+      "non_null": 136,
+      "blank_pct": 0.7,
+      "n_unique": 17,
+      "examples": [
+        "Language,Multimodal,Vision",
+        "Multimodal,Language,Vision",
+        "Multimodal,Language,Audio,Speech,Vision"
+      ]
+    },
+    {
+      "name": "Task",
+      "non_null": 137,
+      "blank_pct": 0.0,
+      "n_unique": 72,
+      "examples": [
+        "Language modeling/generation,Question answering,Search,Visua",
+        "Chat,Code generation,Visual question answering,Translation,L",
+        "Chat,Image generation,Audio generation,Vision-language gener"
+      ]
+    },
+    {
+      "name": "Link",
+      "non_null": 137,
+      "blank_pct": 0.0,
+      "n_unique": 125,
+      "examples": [
+        "https://x.ai/news/grok-4",
+        "https://ai.meta.com/blog/llama-4-multimodal-intelligence/",
+        "https://help.openai.com/en/articles/6825453-chatgpt-release-"
+      ]
+    },
+    {
+      "name": "Parameters",
+      "non_null": 107,
+      "blank_pct": 21.9,
+      "n_unique": 96,
+      "examples": [
+        "3000000000000.0",
+        "2000000000000.0",
+        "253000000000.0"
+      ]
+    },
+    {
+      "name": "Parameters notes",
+      "non_null": 114,
+      "blank_pct": 16.8,
+      "n_unique": 106,
+      "examples": [
+        "Rumored to be 2.4T params (https://x.com/kalomaze/status/194",
+        "\"Llama 4 Behemoth, a 288 billion active parameter model with",
+        "Not known.\n\nInference costs in the API are 2x cheaper than G"
+      ]
+    },
+    {
+      "name": "Authors",
+      "non_null": 121,
+      "blank_pct": 11.7,
+      "n_unique": 105,
+      "examples": [
+        "Aidan Clark, Alex Paino, Jacob Menick, Liam Fedus, Luke Metz",
+        "Akhiad Bercovich, Itay Levy, Izik Golan, Mohammad Dabbah, Ra",
+        "Foundational contributors\nAlex Paino, Ali Kamali, Amin Tooto"
+      ]
+    },
+    {
+      "name": "Notability criteria",
+      "non_null": 130,
+      "blank_pct": 5.1,
+      "n_unique": 22,
+      "examples": [
+        "Training cost",
+        "SOTA improvement,Significant use",
+        "SOTA improvement,Training cost"
+      ]
+    },
+    {
+      "name": "Notability criteria notes",
+      "non_null": 48,
+      "blank_pct": 65.0,
+      "n_unique": 43,
+      "examples": [
+        "Outperforms GPT-4 Turbo and other models on text and especia",
+        "Described by OpenAI as a \"new order of magnitude of compute\"",
+        "High training compute, exceeds 4o and Claude 3.5 on some ben"
+      ]
+    },
+    {
+      "name": "Model accessibility",
+      "non_null": 74,
+      "blank_pct": 46.0,
+      "n_unique": 6,
+      "examples": [
+        "API access",
+        "Unreleased",
+        "Open weights (restricted use)"
+      ]
+    },
+    {
+      "name": "Citations",
+      "non_null": 80,
+      "blank_pct": 41.6,
+      "n_unique": 68,
+      "examples": [
+        "633.0",
+        "691.0",
+        "1734.0"
+      ]
+    },
+    {
+      "name": "Reference",
+      "non_null": 133,
+      "blank_pct": 2.9,
+      "n_unique": 120,
+      "examples": [
+        "Grok 4",
+        "The Llama 4 herd: The beginning of a new era of natively mul",
+        "Improvements to GPT-4o"
+      ]
+    },
+    {
+      "name": "Training dataset",
+      "non_null": 74,
+      "blank_pct": 46.0,
+      "n_unique": 40,
+      "examples": [
+        "Unspecified unreleased",
+        "Unspecified unreleased,Llama Nemotron Post Training Dataset",
+        "Llama 3 dataset"
+      ]
+    },
+    {
+      "name": "Training dataset notes",
+      "non_null": 57,
+      "blank_pct": 58.4,
+      "n_unique": 50,
+      "examples": [
+        "\"With GPT-4o, we trained a single new model end-to-end acros",
+        "\"GPT-4.5 was pre-trained and post-trained on diverse dataset",
+        "Knowledge cutoff date is November 17, 2024, according to htt"
+      ]
+    },
+    {
+      "name": "Dataset size notes",
+      "non_null": 105,
+      "blank_pct": 23.4,
+      "n_unique": 102,
+      "examples": [
+        "\"The overall data mixture for training consisted of more tha",
+        "KD + Continued Training: \n\"LN-Ultra is first trained with kn",
+        "15.6T tokens"
+      ]
+    },
+    {
+      "name": "Epochs",
+      "non_null": 43,
+      "blank_pct": 68.6,
+      "n_unique": 29,
+      "examples": [
+        "1.0",
+        "2.0",
+        "0.6"
+      ]
+    },
+    {
+      "name": "Training time (hours)",
+      "non_null": 56,
+      "blank_pct": 59.1,
+      "n_unique": 45,
+      "examples": [
+        "3000.0",
+        "2160.0",
+        "2142.0"
+      ]
+    },
+    {
+      "name": "Training time notes",
+      "non_null": 54,
+      "blank_pct": 60.6,
+      "n_unique": 52,
+      "examples": [
+        "Based on the model cards for Llama 4 Scout and Maverick, the",
+        "Likely trained for around 4 months/120 days\n\nhttps://colab.r",
+        "Estimated to be approximately 3 months. See compute estimate"
+      ]
+    },
+    {
+      "name": "Training hardware",
+      "non_null": 59,
+      "blank_pct": 56.9,
+      "n_unique": 22,
+      "examples": [
+        "NVIDIA H100 SXM5 80GB",
+        "Google TPU v4",
+        "NVIDIA A100"
+      ]
+    },
+    {
+      "name": "Compute cost notes",
+      "non_null": 8,
+      "blank_pct": 94.2,
+      "n_unique": 8,
+      "examples": [
+        "See https://colab.research.google.com/drive/1nAl9CJi6VFLYZsz",
+        "Per https://time.com/6980000/anthropic/\n\"Claude 3 cost somew",
+        "From Hugging Face:\n\"Falcon-180B was trained on up to 4,096 A"
+      ]
+    },
+    {
+      "name": "Confidence",
+      "non_null": 137,
+      "blank_pct": 0.0,
+      "n_unique": 4,
+      "examples": [
+        "Speculative",
+        "Likely",
+        "Confident"
+      ]
+    },
+    {
+      "name": "Abstract",
+      "non_null": 108,
+      "blank_pct": 21.2,
+      "n_unique": 97,
+      "examples": [
+        "Grok 4 is the most intelligent model in the world. It includ",
+        "We\u2019re sharing the first models in the Llama 4 herd, which wi",
+        "We\u2019re announcing GPT-4o, our new flagship model that can rea"
+      ]
+    },
+    {
+      "name": "Country (of organization)",
+      "non_null": 129,
+      "blank_pct": 5.8,
+      "n_unique": 22,
+      "examples": [
+        "United States of America",
+        "China",
+        "United Arab Emirates"
+      ]
+    },
+    {
+      "name": "Base model",
+      "non_null": 12,
+      "blank_pct": 91.2,
+      "n_unique": 10,
+      "examples": [
+        "GPT-4o (Jan 2025)",
+        "Llama 3.1-405B",
+        "GPT-4o (Nov 2024)"
+      ]
+    },
+    {
+      "name": "Finetune compute (FLOP)",
+      "non_null": 5,
+      "blank_pct": 96.4,
+      "n_unique": 5,
+      "examples": [
+        "1.114817000000001e+24",
+        "4e+21",
+        "5.6e+21"
+      ]
+    },
+    {
+      "name": "Finetune compute notes",
+      "non_null": 10,
+      "blank_pct": 92.7,
+      "n_unique": 6,
+      "examples": [
+        "Definitely a new model, not a GPT-4 finetune",
+        "Knowledge Distillation + Continued pre-training + SFT: \n\n6 F",
+        "\"The total number of extra tokens we train on for the 540B\nm"
+      ]
+    },
+    {
+      "name": "Hardware quantity",
+      "non_null": 49,
+      "blank_pct": 64.2,
+      "n_unique": 32,
+      "examples": [
+        "200000.0",
+        "32000.0",
+        "80000.0"
+      ]
+    },
+    {
+      "name": "Hardware utilization (MFU)",
+      "non_null": 11,
+      "blank_pct": 92.0,
+      "n_unique": 9,
+      "examples": [
+        "0.4042",
+        "0.410675",
+        "0.2696"
+      ]
+    },
+    {
+      "name": "Training data center",
+      "non_null": 7,
+      "blank_pct": 94.9,
+      "n_unique": 7,
+      "examples": [
+        "\"we utilized Colossus, our 200,000 GPU cluster, to run reinf",
+        "Microsoft Goodyear Arizona",
+        "xAI Memphis Colossus 1"
+      ]
+    },
+    {
+      "name": "Batch size",
+      "non_null": 20,
+      "blank_pct": 85.4,
+      "n_unique": 16,
+      "examples": [
+        "16000000.0",
+        "9437184.0",
+        "4194304.0"
+      ]
+    },
+    {
+      "name": "Batch size notes",
+      "non_null": 19,
+      "blank_pct": 86.1,
+      "n_unique": 18,
+      "examples": [
+        "2304 * 4096",
+        "Not listed",
+        "from paper (https://arxiv.org/pdf/2311.16867.pdf):\n\nBatch si"
+      ]
+    },
+    {
+      "name": "Training chip-hours",
+      "non_null": 27,
+      "blank_pct": 80.3,
+      "n_unique": 26,
+      "examples": [
+        "132000000.0",
+        "17694720.0",
+        "57000000.0"
+      ]
+    },
+    {
+      "name": "Training code accessibility",
+      "non_null": 70,
+      "blank_pct": 48.9,
+      "n_unique": 4,
+      "examples": [
+        "Unreleased",
+        "Open (restricted use)",
+        "Open source"
+      ]
+    },
+    {
+      "name": "Accessibility notes",
+      "non_null": 32,
+      "blank_pct": 76.6,
+      "n_unique": 31,
+      "examples": [
+        "\"While we\u2019re not yet releasing Llama 4 Behemoth as it is sti",
+        "GOVERNING TERMS: Your use of this model is governed by the N",
+        "Llama 3.1 model license:\n\nhttps://huggingface.co/meta-llama/"
+      ]
+    },
+    {
+      "name": "Training compute cost (2023 USD)",
+      "non_null": 66,
+      "blank_pct": 51.8,
+      "n_unique": 66,
+      "examples": [
+        "387842678.08636147",
+        "44588963.624007165",
+        "339957479.93550694"
+      ]
+    },
+    {
+      "name": "Training dataset size",
+      "non_null": 137,
+      "blank_pct": 0.0,
+      "n_unique": 130,
+      "examples": [
+        "Grok 4",
+        "Llama 4 Behemoth",
+        "GPT-4o"
+      ]
+    },
+    {
+      "name": "Utilization notes",
+      "non_null": 21,
+      "blank_pct": 84.7,
+      "n_unique": 20,
+      "examples": [
+        "MFU ranges between 0.38 and 0.43 depending on the specific p",
+        "Table 2 indicates MFU at different stages of training.\n\n((42",
+        "6ND gives 4.8e24\nTraining took 48 days on 13,760 NVIDIA A100"
+      ]
+    },
+    {
+      "name": "Estimated over 1e25 FLOP",
+      "non_null": 23,
+      "blank_pct": 83.2,
+      "n_unique": 1,
+      "examples": [
+        "True"
+      ]
+    },
+    {
+      "name": "Power per GPU",
+      "non_null": 59,
+      "blank_pct": 56.9,
+      "n_unique": 13,
+      "examples": [
+        "700",
+        "340",
+        "400"
+      ]
+    },
+    {
+      "name": "Base model compute",
+      "non_null": 7,
+      "blank_pct": 94.9,
+      "n_unique": 5,
+      "examples": [
+        "3.8e+25",
+        "2.1e+25",
+        "2.5272e+24"
+      ]
+    },
+    {
+      "name": "API prices",
+      "non_null": 16,
+      "blank_pct": 88.3,
+      "n_unique": 10,
+      "examples": [
+        "$2.50 / 1M input tokens,$10.00 / 1M output tokens,$0.638 / 1",
+        "$2.7 / 1M input tokens,$2.7 / 1M output tokens,$3 / 1M input",
+        "$3 / 1M input tokens,$15 / 1M output tokens,$3 / 1M input to"
+      ]
+    },
+    {
+      "name": "Inference code accessibility",
+      "non_null": 20,
+      "blank_pct": 85.4,
+      "n_unique": 4,
+      "examples": [
+        "Open access (restricted use)",
+        "Unreleased",
+        "Open source"
+      ]
+    },
+    {
+      "name": "Numerical format",
+      "non_null": 26,
+      "blank_pct": 81.0,
+      "n_unique": 4,
+      "examples": [
+        "BF16",
+        "FP8",
+        "FP16"
+      ]
+    },
+    {
+      "name": "Frontier model",
+      "non_null": 137,
+      "blank_pct": 0.0,
+      "n_unique": 1,
+      "examples": [
+        "True"
+      ]
+    },
+    {
+      "name": "Training power draw (W)",
+      "non_null": 39,
+      "blank_pct": 71.5,
+      "n_unique": 36,
+      "examples": [
+        "43933454.99810563",
+        "109948656.20196915",
+        "22622532.159299146"
+      ]
+    },
+    {
+      "name": "FLOP/$",
+      "non_null": 137,
+      "blank_pct": 0.0,
+      "n_unique": 68,
+      "examples": [
+        "1289182517166598000",
+        "1162619531531091700",
+        "NaN"
+      ]
+    },
+    {
+      "name": "Hardware release date",
+      "non_null": 59,
+      "blank_pct": 56.9,
+      "n_unique": 21,
+      "examples": [
+        "2022-09-20",
+        "2021-05-20",
+        "2020-03-01"
+      ]
+    },
+    {
+      "name": "Training compute estimation method",
+      "non_null": 133,
+      "blank_pct": 2.9,
+      "n_unique": 26,
+      "examples": [
+        "Comparison with other models",
+        "Operation counting",
+        "Benchmarks"
+      ]
+    },
+    {
+      "name": "Post-training compute (FLOP)",
+      "non_null": 1,
+      "blank_pct": 99.3,
+      "n_unique": 1,
+      "examples": [
+        "9.4e+22"
+      ]
+    },
+    {
+      "name": "Post-training compute notes",
+      "non_null": 1,
+      "blank_pct": 99.3,
+      "n_unique": 1,
+      "examples": [
+        "Section 4 gives detail about the post-training process. They"
+      ]
+    },
+    {
+      "name": "Model versions (benchmarks)",
+      "non_null": 23,
+      "blank_pct": 83.2,
+      "n_unique": 23,
+      "examples": [
+        "grok-4-0709,grok-4-0709_high",
+        "gpt-4.5-preview-2025-02-27",
+        "grok-3-beta,grok-3"
+      ]
+    },
+    {
+      "name": "Maybe over 1e25 FLOP",
+      "non_null": 7,
+      "blank_pct": 94.9,
+      "n_unique": 1,
+      "examples": [
+        "True"
+      ]
+    },
+    {
+      "name": "Hardware utilization (HFU)",
+      "non_null": 8,
+      "blank_pct": 94.2,
+      "n_unique": 8,
+      "examples": [
+        "0.578",
+        "0.45",
+        "0.302"
+      ]
+    },
+    {
+      "name": "Training compute cost (cloud)",
+      "non_null": 26,
+      "blank_pct": 81.0,
+      "n_unique": 26,
+      "examples": [
+        "849737163.9529365",
+        "175966627.18329293",
+        "67898317.22964796"
+      ]
+    },
+    {
+      "name": "Training compute cost (upfront)",
+      "non_null": 37,
+      "blank_pct": 73.0,
+      "n_unique": 36,
+      "examples": [
+        "10717356897.243427",
+        "1780094856.8197687",
+        "4446013316.520631"
+      ]
+    },
+    {
+      "name": "Training dataset size (total)",
+      "non_null": 109,
+      "blank_pct": 20.4,
+      "n_unique": 97,
+      "examples": [
+        "30000000000000",
+        "603000000000",
+        "15600000000000"
+      ]
+    },
+    {
+      "name": "Open model weights?",
+      "non_null": 74,
+      "blank_pct": 46.0,
+      "n_unique": 2,
+      "examples": [
+        "No",
+        "Yes"
+      ]
+    }
+  ]
+}

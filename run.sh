@@ -4,8 +4,10 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
-# Locate a Python interpreter (Windows 'py' launcher included).
-if command -v python >/dev/null 2>&1; then PY=python
+# Locate a Python interpreter — prefer the project venv (has pandas/openpyxl/etc.).
+if [ -x ".venv/Scripts/python.exe" ]; then PY=".venv/Scripts/python.exe"
+elif [ -x ".venv/bin/python" ]; then PY=".venv/bin/python"
+elif command -v python >/dev/null 2>&1; then PY=python
 elif command -v python3 >/dev/null 2>&1; then PY=python3
 elif command -v py >/dev/null 2>&1; then PY=py
 else
@@ -28,7 +30,7 @@ echo ">> interpreter: $PY ($("$PY" --version 2>&1))"
 # "$PY" src/acquire/eia.py             # pending: needs EIA_API_KEY
 
 # ---- Phase 4: validation & cleaning (raw -> data/interim) ----
-# "$PY" src/validate/<source>.py
+"$PY" src/validate/profile.py
 
 # ---- Phase 5: analysis (one script per question -> results/) ----
 # "$PY" src/analyze/<question>.py
