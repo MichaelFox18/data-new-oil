@@ -1,0 +1,110 @@
+{
+  "source": "SRC-002 CPPA registry",
+  "n_brokers": 581,
+  "categories": {
+    "precise_geolocation": {
+      "column": "Data broker collects consumers' precise geolocation",
+      "yes": 110,
+      "no": 471,
+      "blank": 0,
+      "other": 0,
+      "pct_yes": 18.9
+    },
+    "minors": {
+      "column": "Data broker collects personal information of minors:",
+      "yes": 18,
+      "no": 563,
+      "blank": 0,
+      "other": 0,
+      "pct_yes": 3.1
+    },
+    "biometric": {
+      "column": "Data broker collects consumers' biometric data",
+      "yes": 11,
+      "no": 570,
+      "blank": 0,
+      "other": 0,
+      "pct_yes": 1.9
+    },
+    "reproductive_health": {
+      "column": "Data broker collects consumers\u2019 reproductive health care data:",
+      "yes": 7,
+      "no": 574,
+      "blank": 0,
+      "other": 0,
+      "pct_yes": 1.2
+    },
+    "citizenship_immigration": {
+      "column": "Data broker collects consumers' citizenship data, including immigration status",
+      "yes": 11,
+      "no": 570,
+      "blank": 0,
+      "other": 0,
+      "pct_yes": 1.9
+    },
+    "sexual_orientation": {
+      "column": "Data broker collects consumers' sexual orientation status",
+      "yes": 18,
+      "no": 563,
+      "blank": 0,
+      "other": 0,
+      "pct_yes": 3.1
+    },
+    "gender_identity": {
+      "column": "Data broker collects consumers' gender identity and gender expression data",
+      "yes": 68,
+      "no": 513,
+      "blank": 0,
+      "other": 0,
+      "pct_yes": 11.7
+    },
+    "union_membership": {
+      "column": "Data broker collects consumers' union membership status",
+      "yes": 6,
+      "no": 575,
+      "blank": 0,
+      "other": 0,
+      "pct_yes": 1.0
+    },
+    "sold_to_genai_developer": {
+      "column": "Data broker shared or sold consumers\u2019 data to a developer of a GenAI system or model in the past year",
+      "yes": 31,
+      "no": 550,
+      "blank": 0,
+      "other": 0,
+      "pct_yes": 5.3
+    },
+    "sold_to_federal_govt": {
+      "column": "Data broker shared or sold consumers' data to the federal government in the past year",
+      "yes": 52,
+      "no": 528,
+      "blank": 1,
+      "other": 0,
+      "pct_yes": 9.0
+    },
+    "sold_to_law_enforcement": {
+      "column": "Data broker shared or sold consumers\u2019 data to law enforcement in the past year, except when required by subpoena or court order",
+      "yes": 27,
+      "no": 554,
+      "blank": 0,
+      "other": 0,
+      "pct_yes": 4.6
+    },
+    "sold_to_state_govts": {
+      "column": "Data broker shared or sold consumers' data to other state governments in the past year",
+      "yes": 50,
+      "no": 531,
+      "blank": 0,
+      "other": 0,
+      "pct_yes": 8.6
+    },
+    "sold_to_foreign_actor": {
+      "column": "Data broker shared or sold consumers' data to a foreign actor in the past year",
+      "yes": 26,
+      "no": 555,
+      "blank": 0,
+      "other": 0,
+      "pct_yes": 4.5
+    }
+  }
+}
