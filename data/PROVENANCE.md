@@ -77,3 +77,15 @@ say so explicitly — never leave a blank that looks complete.
 - license/terms:  public government registry; obtained manually (not scraped)
 - tier:           A
 - caveats:        manual export per GATE-2; robots.txt disallows scraping; PIPE-delimited; name/address/status only, no sensitive-category fields
+
+### SRC-005  Texas SOS Data Broker registry (official CSV export, manual download)
+- name:           Texas SOS Data Broker registry (official CSV export, manual download)
+- url:            https://www.sos.state.tx.us/statdoc/forms/registered-data-brokers.csv
+- access_method:  download
+- retrieved_at:   2026-06-04 16:23 UTC
+- raw_path:       data/raw/texas/texas_data_brokers_2026-06-04.csv
+- sha256:         ab108e52fd539bd82a56139eee586cb63df6ffe7bd1cbf906c158094237b1490
+- rows / size:    400 rows / 438957 bytes
+- license/terms:  public government registry; obtained manually (not scraped)
+- tier:           A
+- caveats:        official SOS export, downloaded manually (URL 403s to automated tools); 'Exported On: Jun 4 2026' = CURRENT; 2-row preamble (Record Name/Exported On) precedes the real header row (Registration Number, Full Legal Name, ...); ~398 data rows; includes 'Data of a Known Child' (minors Y/N) + free-text 'Categories of Data Processed and Transferred'; geolocation is inside free text, not a structured flag

@@ -16,13 +16,15 @@ All figures here are **MEASURED** this session by `src/validate/profile.py` read
 | CA | SRC-002 | 581 × 77 | utf-8 / `,` | 0 | **Yes — rich** |
 | VT | SRC-003 | 714 × 39 | xlsx | **26** | No (identity + status + address) |
 | OR | SRC-004 | 352 × 10 | cp1252 / `\|` | 0 | No (name + address + status) |
-| TX | SRC-005 | pending manual download | — | — | reportedly has data-categories |
+| TX | SRC-005 | ~398 data (+2 preamble rows) × ~18 | utf-8 / `,` | 0 | partial — minors flag + free-text categories |
 
 **Implication for Q1:** the cross-state work splits cleanly into two analyses —
 - **Count + dedup** across all states (key = normalized broker name), and
-- **Sensitive-category shares** (geolocation / minors / GenAI-sharing / biometric) which
-  are a **California-only** computation; OR and VT do not carry those fields. TX may add a
-  second category source once downloaded. State this scope honestly in the finding.
+- **Sensitive-category shares** (geolocation / minors / GenAI-sharing / biometric):
+  structured Yes/No flags are mostly **California-only**. TX adds a **minors** flag
+  (`Data of a Known Child`) and free-text categories; OR and VT carry no category fields.
+  So minors share = CA + TX; geolocation / biometric / GenAI share = CA-only. State this
+  scope honestly in the finding.
 
 ### California (SRC-002) — the category goldmine
 - 77 columns. The four Q1-critical category flags are **0.0% blank**, values `Yes`/`No`:
@@ -46,6 +48,17 @@ All figures here are **MEASURED** this session by `src/validate/profile.py` read
 - 9 real columns + 1 trailing-pipe empty column (`Unnamed: 9`, drop it).
 - `addr_line_4` mashes city/state/zip into one field ("San Francisco CA  94104") → parse
   in cleaning. No category fields.
+
+### Texas (SRC-005) — fresh export, but a preamble to skip
+- Official SOS export, **downloaded manually** (URL 403s to automated tools).
+- **Current:** preamble reads `Exported On: Jun 4, 2026`; ~398 broker rows (not the stale
+  2024 export we worried about).
+- **Cleaning gotcha:** a 2-row metadata preamble (`Record Name`, `Exported On`) precedes
+  the real header (`Registration Number, Full Legal Name, Primary Physical Address, …`) —
+  read with the header on the 3rd line (skip 2 rows). The generic profile is column-shifted
+  and **not authoritative** on TX schema.
+- Category signal: `Data of a Known Child` (minors, Yes/No), free-text `Categories of Data
+  Processed and Transferred`, `Number of Security Breaches`. No structured geolocation flag.
 
 ## Epoch model datasets (SRC-001) — Q3/Q4 feasibility
 - `notable_ai_models.csv`: 1026 × 47. `Training dataset size (total)` is **35.5% blank**

@@ -12,3 +12,4 @@
 2026-06-04 16:22 UTC	epoch	cached	https://epoch.ai/data/frontier_ai_models.csv	data/raw/epoch/frontier_ai_models.csv	bytes=373000	rows=137	sha256=b048276162ca6965b1281be661930af02c41c06be12f8d3c5e27c321d83c37d6
 2026-06-04 16:22 UTC	epoch	cached	https://epoch.ai/data/large_scale_ai_models.csv	data/raw/epoch/large_scale_ai_models.csv	bytes=1069056	rows=515	sha256=6f92b14a3613f16bc2bdbb8e02aebe266aa3d2cb42887c47fc0b0a0d44c2005b
 2026-06-04 16:22 UTC	cppa	cached	https://cppa.ca.gov/data_broker_registry/registry.csv	data/raw/cppa/registry.csv	bytes=319421	rows=581	sha256=a58708e10006fa4897fcff1d563f2f99f9dac0dc4418ea68cfad90a825d17f1d
+2026-06-04 16:23 UTC	texas	ingested	https://www.sos.state.tx.us/statdoc/forms/registered-data-brokers.csv	data/raw/texas/texas_data_brokers_2026-06-04.csv	bytes=438957	rows=400	sha256=ab108e52fd539bd82a56139eee586cb63df6ffe7bd1cbf906c158094237b1490
