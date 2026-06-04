@@ -23,3 +23,33 @@ say so explicitly — never leave a blank that looks complete.
 ---
 
 <!-- No sources fetched yet. First entries land in Phase 3, after GATE 2 sign-off. -->
+
+### SRC-001  Epoch AI — model datasets
+- name:           Epoch AI, Data on Notable AI Models (+ Frontier, Large-Scale subsets)
+- url:            https://epoch.ai/data/ai-models  (per-file CSVs at epoch.ai/data/)
+- access_method:  download
+- retrieved_at:   2026-06-04 15:28 UTC
+- raw_path:       data/raw/epoch/  (files below)
+  - notable_ai_models.csv: rows=1026, sha256=338ebdc58e2fc1c1211b0584a0572a6c6fb6666a6869332876c2d48373596895
+  - frontier_ai_models.csv: rows=137, sha256=b048276162ca6965b1281be661930af02c41c06be12f8d3c5e27c321d83c37d6
+  - large_scale_ai_models.csv: rows=515, sha256=6f92b14a3613f16bc2bdbb8e02aebe266aa3d2cb42887c47fc0b0a0d44c2005b
+- rows / size:    see per-file rows above
+- license/terms:  CC-BY (free to use/redistribute with attribution to Epoch AI)
+- tier:           A (originating research group's own published dataset)
+- caveats:        training-dataset-size field coverage varies by model; verify exact
+                  column names in Phase 4; Epoch updates these CSVs ~daily, so the
+                  retrieved_at snapshot date matters for reproducibility.
+
+### SRC-002  CPPA Data Broker Registry
+- name:           California Privacy Protection Agency data broker registry
+- url:            https://cppa.ca.gov/data_broker_registry/registry.csv
+- access_method:  download
+- retrieved_at:   2026-06-04 15:28 UTC
+- raw_path:       data/raw/cppa/registry.csv
+- sha256:         a58708e10006fa4897fcff1d563f2f99f9dac0dc4418ea68cfad90a825d17f1d
+- rows / size:    581 rows / 319421 bytes
+- license/terms:  public CA government registry; robots.txt allows the registry path (2026-06-04)
+- tier:           A
+- caveats:        self-registration only (non-registrants absent); collection-category
+                  and recipient columns to be profiled in Phase 4; reflects the 2026
+                  registration cycle.

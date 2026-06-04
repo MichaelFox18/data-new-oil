@@ -19,7 +19,13 @@ echo ">> interpreter: $PY ($("$PY" --version 2>&1))"
 "$PY" src/check_env.py
 
 # ---- Phase 3: acquisition (one fetcher per source; writes data/raw + provenance) ----
-# "$PY" src/acquire/<source>.py
+# Fetchers are idempotent + cached: with raw already present they re-hash, not re-download.
+"$PY" src/acquire/epoch_models.py
+"$PY" src/acquire/ca_cppa.py
+# "$PY" src/acquire/tx_sos.py          # pending: Appian API recon (GATE-2: API-first)
+# src/acquire/ingest_local.py          # VT/OR: run manually once the placed file exists
+# "$PY" src/acquire/sec_edgar.py       # pending: needs SEC_EDGAR_USER_AGENT (contact email)
+# "$PY" src/acquire/eia.py             # pending: needs EIA_API_KEY
 
 # ---- Phase 4: validation & cleaning (raw -> data/interim) ----
 # "$PY" src/validate/<source>.py

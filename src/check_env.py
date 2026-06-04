@@ -59,7 +59,9 @@ def main() -> int:
         if not any(line.strip() == ".env" for line in ignored):
             problems.append(".gitignore does not exclude .env")
     if (ROOT / ".env").exists():
-        problems.append(".env file present — it must never be committed (check it is ignored)")
+        # A local .env is expected (it holds keys). It must stay gitignored, which the
+        # .gitignore check above enforces — its mere presence is not a failure.
+        print(">> note   : local .env present (expected for keys; must stay gitignored)")
 
     n_ok = len(REQUIRED_DIRS) + len(REQUIRED_FILES) - len(problems)
     print(f">> checks : {n_ok}/{len(REQUIRED_DIRS) + len(REQUIRED_FILES)} structural invariants OK")

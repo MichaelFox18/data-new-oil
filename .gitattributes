@@ -10,3 +10,7 @@
 *.zip  binary
 *.gz   binary
 *.xlsx binary
+
+# Raw data is immutable and sha256-anchored in PROVENANCE (CLAUDE.md §2.6/§6).
+# Store exact bytes — never normalize line endings, or checkout hashes won't match.
+data/raw/** -text

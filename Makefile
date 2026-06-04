@@ -11,7 +11,8 @@ check:
 
 # Stages are filled in as phases land (see CLAUDE.md §9).
 acquire:
-	@echo "Phase 3: add src/acquire/<source>.py invocations here."
+	$(PY) src/acquire/epoch_models.py
+	$(PY) src/acquire/ca_cppa.py
 
 validate:
 	@echo "Phase 4: add src/validate/<source>.py invocations here."
