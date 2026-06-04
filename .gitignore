@@ -1,0 +1,30 @@
+# --- secrets / env (CLAUDE.md §10) ---
+.env
+.env.*
+!.env.example
+
+# --- python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# --- notebooks ---
+.ipynb_checkpoints/
+
+# --- OS cruft ---
+.DS_Store
+Thumbs.db
+
+# --- frozen lockfile is tracked; build caches are not ---
+.cache/
+
+# NOTE: data/raw/, data/PROVENANCE.md, results/, figures/, findings/, and logs/
+# are intentionally TRACKED (provenance + reproducibility). If a specific raw
+# blob is too large to commit, ignore that exact path here and keep its
+# PROVENANCE entry + sha256 so it stays auditable. Example:
+# data/raw/common_crawl/*.warc.gz

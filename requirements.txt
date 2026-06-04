@@ -1,0 +1,29 @@
+# Python dependencies for the data-analysis pipeline.
+#
+# These are LOWER-BOUND floors chosen for Python 3.14 compatibility. Per CLAUDE.md
+# §6 ("pin versions"), freeze exact pins after the first successful install in the
+# project venv:
+#
+#     py -m pip install -r requirements.txt
+#     py -m pip freeze > requirements.lock.txt
+#
+# and commit requirements.lock.txt as the reproducible record.
+
+# data wrangling
+pandas>=2.2
+pyarrow>=16.0          # parquet for data/interim
+polars>=1.0            # optional alt engine (CLAUDE.md allows pandas OR polars)
+
+# fetching
+requests>=2.32
+httpx>=0.27
+
+# scraping (state broker registries, if approved at GATE 2)
+beautifulsoup4>=4.12
+lxml>=5.0
+
+# config / secrets
+python-dotenv>=1.0
+
+# figures
+matplotlib>=3.9
