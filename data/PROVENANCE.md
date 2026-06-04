@@ -53,3 +53,27 @@ say so explicitly — never leave a blank that looks complete.
 - caveats:        self-registration only (non-registrants absent); collection-category
                   and recipient columns to be profiled in Phase 4; reflects the 2026
                   registration cycle.
+
+### SRC-003  Vermont SOS Data Broker registry (bulk download)
+- name:           Vermont SOS Data Broker registry (bulk download)
+- url:            https://bizfilings.vermont.gov
+- access_method:  portal
+- retrieved_at:   2026-06-04 16:06 UTC
+- raw_path:       data/raw/vermont/vermont_data_brokers_2026-06-04.xlsx
+- sha256:         a5ad66420c2ef5c54f2cafced6cc3396eb61b71e694184c5e017803a7c0a429b
+- rows / size:    714 rows / 258991 bytes
+- license/terms:  public government registry; obtained manually (not scraped)
+- tier:           A
+- caveats:        manual bulk download per GATE-2; portal blocks automated access; xlsx; schema TBD in Phase 4
+
+### SRC-004  Oregon DCBS/DFR Data Broker registry (manual export)
+- name:           Oregon DCBS/DFR Data Broker registry (manual export)
+- url:            https://ordcbs.mylicense.com/Verification/Search.aspx
+- access_method:  manual
+- retrieved_at:   2026-06-04 16:06 UTC
+- raw_path:       data/raw/oregon/oregon_data_brokers_2026-06-04.csv
+- sha256:         6593365f9ec6dd7987fb16a6024d4b4d94502e4e4b4e28177bd3f6747e69180b
+- rows / size:    352 rows / 45306 bytes
+- license/terms:  public government registry; obtained manually (not scraped)
+- tier:           A
+- caveats:        manual export per GATE-2; robots.txt disallows scraping; PIPE-delimited; name/address/status only, no sensitive-category fields

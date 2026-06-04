@@ -11,7 +11,9 @@ from __future__ import annotations
 import csv
 import datetime
 import hashlib
+import re
 import urllib.request
+import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -58,6 +60,25 @@ def csv_rows(path: Path) -> int | None:
     try:
         with path.open(newline="", encoding="utf-8", errors="replace") as f:
             n = sum(1 for _ in csv.reader(f))
+        return max(n - 1, 0)
+    except Exception:
+        return None
+
+
+def xlsx_rows(path: Path) -> int | None:
+    """Best-effort data-row count for an .xlsx (first worksheet, minus header) via
+    stdlib zip/xml — avoids a dependency just to log provenance. None if unreadable.
+    Full column profiling happens in Phase 4 with a proper reader."""
+    try:
+        with zipfile.ZipFile(path) as z:
+            sheets = sorted(
+                n for n in z.namelist()
+                if n.startswith("xl/worksheets/sheet") and n.endswith(".xml")
+            )
+            if not sheets:
+                return None
+            xml = z.read(sheets[0]).decode("utf-8", "replace")
+        n = len(re.findall(r"<row[ >]", xml))
         return max(n - 1, 0)
     except Exception:
         return None

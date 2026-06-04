@@ -42,7 +42,7 @@ def main() -> int:
 
     data = path.read_bytes()
     sha = hashlib.sha256(data).hexdigest()
-    rows = A.csv_rows(path)
+    rows = A.xlsx_rows(path) if path.suffix.lower() in (".xlsx", ".xls") else A.csv_rows(path)
     rel = path.relative_to(A.ROOT).as_posix() if A.ROOT in path.parents else path.name
     info = {"url": a.url, "path": path, "bytes": len(data), "sha256": sha, "status": "ingested"}
     A.log_fetch(a.source, info, rows)

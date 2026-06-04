@@ -6,3 +6,5 @@
 2026-06-04 15:31 UTC	epoch	cached	https://epoch.ai/data/frontier_ai_models.csv	data/raw/epoch/frontier_ai_models.csv	bytes=373000	rows=137	sha256=b048276162ca6965b1281be661930af02c41c06be12f8d3c5e27c321d83c37d6
 2026-06-04 15:31 UTC	epoch	cached	https://epoch.ai/data/large_scale_ai_models.csv	data/raw/epoch/large_scale_ai_models.csv	bytes=1069056	rows=515	sha256=6f92b14a3613f16bc2bdbb8e02aebe266aa3d2cb42887c47fc0b0a0d44c2005b
 2026-06-04 15:31 UTC	cppa	cached	https://cppa.ca.gov/data_broker_registry/registry.csv	data/raw/cppa/registry.csv	bytes=319421	rows=581	sha256=a58708e10006fa4897fcff1d563f2f99f9dac0dc4418ea68cfad90a825d17f1d
+2026-06-04 16:06 UTC	vermont	ingested	https://bizfilings.vermont.gov	data/raw/vermont/vermont_data_brokers_2026-06-04.xlsx	bytes=258991	rows=714	sha256=a5ad66420c2ef5c54f2cafced6cc3396eb61b71e694184c5e017803a7c0a429b
+2026-06-04 16:06 UTC	oregon	ingested	https://ordcbs.mylicense.com/Verification/Search.aspx	data/raw/oregon/oregon_data_brokers_2026-06-04.csv	bytes=45306	rows=352	sha256=6593365f9ec6dd7987fb16a6024d4b4d94502e4e4b4e28177bd3f6747e69180b
