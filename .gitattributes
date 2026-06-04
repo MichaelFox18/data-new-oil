@@ -1,0 +1,12 @@
+# Normalize all text files to LF in the repository (silences CRLF warnings on Windows).
+* text=auto eol=lf
+
+# Treat common data/figure binaries as binary so Git never line-ending-mangles them.
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.pdf  binary
+*.parquet binary
+*.zip  binary
+*.gz   binary
+*.xlsx binary
