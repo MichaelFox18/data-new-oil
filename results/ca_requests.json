@@ -1,0 +1,83 @@
+{
+  "source": "SRC-002 CPPA registry",
+  "reference_year": 2024,
+  "n_brokers": 581,
+  "by_type": {
+    "delete": {
+      "column": "Requests to delete - Total requests received",
+      "received": 57959768,
+      "complied": 57133353,
+      "denied": 889026,
+      "compliance_rate": 0.986,
+      "brokers_reporting_gt0": 430,
+      "median_response_days_across_brokers": 5.5
+    },
+    "know_collected": {
+      "column": "Requests to know what personal information is being collected - Total requests received",
+      "received": 4310186,
+      "complied": 4332301,
+      "denied": 43052,
+      "compliance_rate": 1.005,
+      "brokers_reporting_gt0": 336,
+      "median_response_days_across_brokers": 5.0
+    },
+    "know_sold_shared": {
+      "column": "Requests to know what personal information is sold or shared - Total requests received",
+      "received": 2831882,
+      "complied": 2867704,
+      "denied": 29351,
+      "compliance_rate": 1.013,
+      "brokers_reporting_gt0": 275,
+      "median_response_days_across_brokers": 6.0
+    },
+    "opt_out": {
+      "column": "Requests to opt out of sale or sharing - Total requests received",
+      "received": 98671954,
+      "complied": 96959566,
+      "denied": 1708726,
+      "compliance_rate": 0.983,
+      "brokers_reporting_gt0": 401,
+      "median_response_days_across_brokers": 3.0
+    },
+    "limit_sensitive": {
+      "column": "Requests to limit the use and disclosure of sensitive personal information - Total requests received",
+      "received": 30951629,
+      "complied": 30831479,
+      "denied": 120150,
+      "compliance_rate": 0.996,
+      "brokers_reporting_gt0": 127,
+      "median_response_days_across_brokers": 3.0
+    }
+  },
+  "all_types": {
+    "received": 194725419,
+    "complied": 192124403,
+    "denied": 2790305,
+    "compliance_rate": 0.987,
+    "top10_share_of_requests": 0.677,
+    "top1pct_share_of_requests": 0.58,
+    "brokers_with_zero_requests": 131,
+    "top5_brokers": [
+      {
+        "name": "Cuebiq Group, LLC",
+        "total_requests": 78854418
+      },
+      {
+        "name": "Eyeota Pte Ltd",
+        "total_requests": 14698600
+      },
+      {
+        "name": "Azira, LLC",
+        "total_requests": 10085384
+      },
+      {
+        "name": "Peoplewhiz, Inc",
+        "total_requests": 5139931
+      },
+      {
+        "name": "AGR Marketing Solutions LLC",
+        "total_requests": 4230705
+      }
+    ]
+  }
+}
