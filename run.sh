@@ -40,8 +40,10 @@ echo ">> interpreter: $PY ($("$PY" --version 2>&1))"
 "$PY" src/analyze/sec_revenue.py
 "$PY" src/analyze/sec_arpu.py
 "$PY" src/analyze/crossover.py
+"$PY" src/analyze/deferral.py
 
 # ---- Phase 7: figures (results/ -> figures/, labels injected from data) ----
 "$PY" src/viz/crossover.py
+"$PY" src/viz/deferral.py
 
 echo ">> run.sh complete."

@@ -1,0 +1,46 @@
+{
+  "type": "MODELED \u2014 synthetic data assumed to multiply effective training data by M",
+  "assumptions": [
+    "effective stock = human stock (~4e14, growing 0-10%/yr) x M",
+    "M (synthetic multiplier) is a SWEEP, not a prediction \u2014 we do not estimate real synthetic volume",
+    "frontier trend (~2.2x/yr) assumed unchanged",
+    "synthetic data assumed as useful as human data (1:1) \u2014 an UPPER bound on its effect",
+    "model collapse / quality degradation NOT modeled (see counterforce)"
+  ],
+  "frontier_om_per_year": 0.34,
+  "years_deferred_per_10x_effective_data": 3.14,
+  "baseline_crossover_year": 2029.1,
+  "scenarios": [
+    {
+      "synthetic_multiplier": 1,
+      "effective_stock_tokens": 400000000000000.0,
+      "crossover_year": 2029.1
+    },
+    {
+      "synthetic_multiplier": 3,
+      "effective_stock_tokens": 1200000000000000.0,
+      "crossover_year": 2030.6
+    },
+    {
+      "synthetic_multiplier": 10,
+      "effective_stock_tokens": 4000000000000000.0,
+      "crossover_year": 2032.2
+    },
+    {
+      "synthetic_multiplier": 30,
+      "effective_stock_tokens": 1.2e+16,
+      "crossover_year": 2033.7
+    },
+    {
+      "synthetic_multiplier": 100,
+      "effective_stock_tokens": 4e+16,
+      "crossover_year": 2035.4
+    },
+    {
+      "synthetic_multiplier": 1000,
+      "effective_stock_tokens": 4e+17,
+      "crossover_year": 2038.5
+    }
+  ],
+  "counterforce": "Model collapse (REPORTED, research literature): models trained on their own synthetic output can degrade in quality. This caps synthetic data's effective multiplier and is Chapter 7's open question \u2014 NOT quantified here."
+}
