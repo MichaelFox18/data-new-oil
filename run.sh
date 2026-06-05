@@ -24,18 +24,24 @@ echo ">> interpreter: $PY ($("$PY" --version 2>&1))"
 # Fetchers are idempotent + cached: with raw already present they re-hash, not re-download.
 "$PY" src/acquire/epoch_models.py
 "$PY" src/acquire/ca_cppa.py
-# "$PY" src/acquire/tx_sos.py          # pending: Appian API recon (GATE-2: API-first)
-# src/acquire/ingest_local.py          # VT/OR: run manually once the placed file exists
-# "$PY" src/acquire/sec_edgar.py       # pending: needs SEC_EDGAR_USER_AGENT (contact email)
-# "$PY" src/acquire/eia.py             # pending: needs EIA_API_KEY
+"$PY" src/acquire/sec_edgar.py         # cached; needs SEC_EDGAR_USER_AGENT in .env
+# VT/OR/TX registries are committed raw (manual per GATE-2); ingest_local.py logs new ones.
+# "$PY" src/acquire/eia.py             # pending: needs EIA_API_KEY (Q8 Hubbert)
 
 # ---- Phase 4: validation & cleaning (raw -> data/interim) ----
 "$PY" src/validate/profile.py
 
 # ---- Phase 5: analysis (one script per question -> results/) ----
-# "$PY" src/analyze/<question>.py
+"$PY" src/analyze/ca_categories.py
+"$PY" src/analyze/ca_requests.py
+"$PY" src/analyze/broker_census.py
+"$PY" src/analyze/tx_ai_mentions.py
+"$PY" src/analyze/epoch_growth.py
+"$PY" src/analyze/sec_revenue.py
+"$PY" src/analyze/sec_arpu.py
+"$PY" src/analyze/crossover.py
 
 # ---- Phase 7: figures (results/ -> figures/, labels injected from data) ----
-# "$PY" src/viz/<figure>.py
+"$PY" src/viz/crossover.py
 
 echo ">> run.sh complete."

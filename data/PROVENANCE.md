@@ -122,3 +122,16 @@ say so explicitly — never leave a blank that looks complete.
 - caveats:        DAP/DAU/DAUq are DAILY actives; PINS MAU is MONTHLY (larger base) -> not
                   strictly comparable; user metrics are Q4-2025 point-in-time averages vs
                   full-year revenue, so the ratio is an approximate annual rev-per-user.
+
+### SRC-008  Epoch human-text data stock (REPORTED)
+- name:           Epoch AI estimate of the stock of human-generated public text
+- url:            https://arxiv.org/abs/2211.04325 ; https://arxiv.org/html/2211.04325v2
+- access_method:  download (paper text) — REPORTED quotes
+- retrieved_at:   2026-06-05
+- raw_path:       N/A (REPORTED quotes)
+  - "models will be trained on dataset sizes approaching the total effective stock of text in the indexed web: around 4e14 tokens" [https://arxiv.org/html/2211.04325v2]
+  - "indexed web ~510T tokens after dedup [95% CI 130T-2100T]; models reach the stock between 2026 and 2032" [https://arxiv.org/abs/2211.04325]
+- tier:           A (originating research group's own paper)
+- caveats:        ~4e14 effective (quality/repetition-adjusted) vs ~510T raw indexed web
+                  [95% 130T-2100T]; exhaustion window 2026-2032 is Epoch's own projection
+                  (their MODELED). Earlier '~300T' lead was a search summary, NOT used.
