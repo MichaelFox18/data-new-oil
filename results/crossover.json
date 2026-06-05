@@ -17,11 +17,17 @@
       130000000000000.0,
       2100000000000000.0
     ],
+    "growth_rate_per_year_central": 0.05,
+    "growth_rate_ci": [
+      0.0,
+      0.1
+    ],
+    "anchor_year": 2024,
     "epoch_exhaustion_window": [
       2026,
       2032
     ],
-    "type": "REPORTED (Epoch)",
+    "type": "REPORTED (Epoch); central growth = midpoint of their 0-10%/yr CI",
     "sources": [
       {
         "quote": "models will be trained on dataset sizes approaching the total effective stock of text in the indexed web: around 4e14 tokens",
@@ -30,15 +36,20 @@
       {
         "quote": "indexed web ~510T tokens after dedup [95% CI 130T-2100T]; models reach the stock between 2026 and 2032",
         "url": "https://arxiv.org/abs/2211.04325"
+      },
+      {
+        "quote": "we settle on a confidence interval between 0% and 10% a year [for stock growth]; the number of internet users is growing by approximately 2-4% per year",
+        "url": "https://arxiv.org/html/2211.04325v2"
       }
     ],
     "retrieved": "2026-06-05"
   },
   "crossover_modeled": {
-    "type": "MODELED \u2014 our frontier trend extrapolated to the stock level",
-    "year_at_effective_stock": 2028.7,
-    "year_at_ci_low": 2027.3,
-    "year_at_ci_high": 2030.9
+    "type": "MODELED \u2014 frontier trend vs the GROWING stock (Epoch 0-10%/yr)",
+    "year_central": 2029.1,
+    "year_earliest": 2027.3,
+    "year_latest": 2031.8,
+    "note": "stock growth shifts the crossover only ~months (frontier ~120%/yr >> stock <=10%/yr)"
   },
   "frontier_points": [
     {

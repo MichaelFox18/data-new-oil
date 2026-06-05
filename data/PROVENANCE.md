@@ -131,7 +131,9 @@ say so explicitly — never leave a blank that looks complete.
 - raw_path:       N/A (REPORTED quotes)
   - "models will be trained on dataset sizes approaching the total effective stock of text in the indexed web: around 4e14 tokens" [https://arxiv.org/html/2211.04325v2]
   - "indexed web ~510T tokens after dedup [95% CI 130T-2100T]; models reach the stock between 2026 and 2032" [https://arxiv.org/abs/2211.04325]
+  - "we settle on a confidence interval between 0% and 10% a year [for stock growth]; the number of internet users is growing by approximately 2-4% per year" [https://arxiv.org/html/2211.04325v2]
 - tier:           A (originating research group's own paper)
 - caveats:        ~4e14 effective (quality/repetition-adjusted) vs ~510T raw indexed web
-                  [95% 130T-2100T]; exhaustion window 2026-2032 is Epoch's own projection
-                  (their MODELED). Earlier '~300T' lead was a search summary, NOT used.
+                  [95% 130T-2100T]; the stock GROWS 0-10%/yr (it is NOT static); exhaustion
+                  window 2026-2032 is Epoch's own projection. Earlier '~300T' lead was a
+                  search summary, NOT used.
