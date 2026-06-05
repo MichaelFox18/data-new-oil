@@ -1,0 +1,126 @@
+{
+  "source": "SRC-006 SEC EDGAR companyfacts (XBRL)",
+  "companies": {
+    "META": {
+      "entity": "Meta Platforms, Inc.",
+      "concepts": [
+        "Revenues",
+        "RevenueFromContractWithCustomerExcludingAssessedTax"
+      ],
+      "fy": 2025,
+      "revenue_usd": 200966000000,
+      "prior_fy": 2024,
+      "prior_revenue_usd": 164501000000,
+      "yoy_growth_pct": 22.2,
+      "all_years": {
+        "2010": 1974000000,
+        "2011": 3711000000,
+        "2012": 5089000000,
+        "2013": 7872000000,
+        "2014": 12466000000,
+        "2015": 17928000000,
+        "2016": 27638000000,
+        "2017": 40653000000,
+        "2018": 55838000000,
+        "2019": 70697000000,
+        "2020": 85965000000,
+        "2021": 117929000000,
+        "2022": 116609000000,
+        "2023": 134902000000,
+        "2024": 164501000000,
+        "2025": 200966000000
+      }
+    },
+    "GOOGL": {
+      "entity": "Alphabet Inc.",
+      "concepts": [
+        "Revenues",
+        "RevenueFromContractWithCustomerExcludingAssessedTax"
+      ],
+      "fy": 2025,
+      "revenue_usd": 402836000000,
+      "prior_fy": 2024,
+      "prior_revenue_usd": 350018000000,
+      "yoy_growth_pct": 15.1,
+      "all_years": {
+        "2013": 55519000000,
+        "2014": 66001000000,
+        "2015": 74989000000,
+        "2016": 90272000000,
+        "2017": 110855000000,
+        "2018": 136819000000,
+        "2019": 161857000000,
+        "2020": 182527000000,
+        "2021": 257637000000,
+        "2022": 282836000000,
+        "2023": 307394000000,
+        "2024": 350018000000,
+        "2025": 402836000000
+      }
+    },
+    "SNAP": {
+      "entity": "Snap Inc.",
+      "concepts": [
+        "Revenues",
+        "RevenueFromContractWithCustomerExcludingAssessedTax"
+      ],
+      "fy": 2025,
+      "revenue_usd": 5931447000,
+      "prior_fy": 2024,
+      "prior_revenue_usd": 5361398000,
+      "yoy_growth_pct": 10.6,
+      "all_years": {
+        "2015": 58663000,
+        "2016": 404482000,
+        "2017": 824949000,
+        "2018": 1180446000,
+        "2019": 1715534000,
+        "2020": 2506626000,
+        "2021": 4117048000,
+        "2022": 4601847000,
+        "2023": 4606115000,
+        "2024": 5361398000,
+        "2025": 5931447000
+      }
+    },
+    "RDDT": {
+      "entity": "Reddit, Inc.",
+      "concepts": [
+        "RevenueFromContractWithCustomerExcludingAssessedTax"
+      ],
+      "fy": 2025,
+      "revenue_usd": 2202506000,
+      "prior_fy": 2024,
+      "prior_revenue_usd": 1300205000,
+      "yoy_growth_pct": 69.4,
+      "all_years": {
+        "2022": 666701000,
+        "2023": 804029000,
+        "2024": 1300205000,
+        "2025": 2202506000
+      }
+    },
+    "PINS": {
+      "entity": "Pinterest, Inc.",
+      "concepts": [
+        "RevenueFromContractWithCustomerExcludingAssessedTax"
+      ],
+      "fy": 2025,
+      "revenue_usd": 4221767000,
+      "prior_fy": 2024,
+      "prior_revenue_usd": 3646166000,
+      "yoy_growth_pct": 15.8,
+      "all_years": {
+        "2017": 472852000,
+        "2018": 755932000,
+        "2019": 1142761000,
+        "2020": 1692658000,
+        "2021": 2578027000,
+        "2022": 2802574000,
+        "2023": 3055071000,
+        "2024": 3646166000,
+        "2025": 4221767000
+      }
+    }
+  }
+}

@@ -89,3 +89,21 @@ say so explicitly — never leave a blank that looks complete.
 - license/terms:  public government registry; obtained manually (not scraped)
 - tier:           A
 - caveats:        official SOS export, downloaded manually (URL 403s to automated tools); 'Exported On: Jun 4 2026' = CURRENT; 2-row preamble (Record Name/Exported On) precedes the real header row (Registration Number, Full Legal Name, ...); ~398 data rows; includes 'Data of a Known Child' (minors Y/N) + free-text 'Categories of Data Processed and Transferred'; geolocation is inside free text, not a structured flag
+
+### SRC-006  SEC EDGAR XBRL company facts
+- name:           SEC EDGAR companyfacts (XBRL) for platform revenue/ARPU (Q6)
+- url:            https://data.sec.gov/api/xbrl/companyfacts/CIK<cik>.json (+ company_tickers.json)
+- access_method:  api
+- retrieved_at:   2026-06-05 13:19 UTC
+- raw_path:       data/raw/sec/  (files below)
+  - META (Meta Platforms, Inc., CIK 0001326801): companyfacts_META.json sha256=ded9a9be1ed9c81cf94a4c1828a076438df6d43045a84f40ef392140ff638ccd
+  - GOOGL (Alphabet Inc., CIK 0001652044): companyfacts_GOOGL.json sha256=f86ec6e788ad2e8fa5fb2832c0c4a508c3e109b60acb54d2344c5c24efcda5d3
+  - SNAP (Snap Inc, CIK 0001564408): companyfacts_SNAP.json sha256=25f414946719805859e106ff1f39d234ef97c3302204e549556eab0fc3b69a3c
+  - RDDT (Reddit, Inc., CIK 0001713445): companyfacts_RDDT.json sha256=3f7f0e5a99dd76493aea03778ea73d8f89cb674a79d2917617f69cbe2621fc05
+  - PINS (PINTEREST, INC., CIK 0001506293): companyfacts_PINS.json sha256=77ce0a9ea6fc8fa90e49c6f707234bc9076a31f9bfa6be5a49c5bd3898ba087b
+- sha256:         see per-file above; company_tickers.json sha256=9595b3e2ee7f36751ea2ed0b1d17746e3bd60dd4bffa7edb08c6de27fa33eed7
+- rows / size:    JSON fact sets
+- license/terms:  US government public filings; SEC fair-access UA sent (no key)
+- tier:           A
+- caveats:        revenue is in us-gaap XBRL; user counts (MAU/DAU/ARPU) are usually
+                  company EXTENSION tags NOT returned by companyfacts -> may need filing text.
