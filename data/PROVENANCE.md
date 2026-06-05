@@ -137,3 +137,29 @@ say so explicitly — never leave a blank that looks complete.
                   [95% 130T-2100T]; the stock GROWS 0-10%/yr (it is NOT static); exhaustion
                   window 2026-2032 is Epoch's own projection. Earlier '~300T' lead was a
                   search summary, NOT used.
+
+### SRC-009  EIA US crude oil production
+- name:           EIA U.S. Field Production of Crude Oil (annual, 1859- )
+- url:            https://api.eia.gov/v2/petroleum/crd/crpdn/data/?frequency=annual&data%5B0%5D=value&facets%5Bduoarea%5D%5B%5D=NUS&facets%5Bproduct%5D%5B%5D=EPC0&facets%5Bprocess%5D%5B%5D=FPF&sort%5B0%5D%5Bcolumn%5D=period&sort%5B0%5D%5Bdirection%5D=asc&length=5000&api_key=REDACTED
+- access_method:  api
+- retrieved_at:   2026-06-05 15:17 UTC
+- raw_path:       data/raw/eia/us_crude_production.json
+- sha256:         77701baed8f3525119ab333a35eacd64d7e7503154e7036fdf24eeeb20a4c50b
+- rows / size:    334 records (MBBL annual total + MBBL/D)
+- license/terms:  US government public data; EIA API key from .env (REDACTED here, never committed)
+- tier:           A
+- caveats:        NUS = TOTAL US (incl. Alaska + offshore); Hubbert's 1956 forecast was
+                  lower-48 only -> note that comparison caveat in the analysis. The api_key
+                  EIA echoes in its response was REDACTED from the saved file (data untouched).
+
+### SRC-010  Hubbert 1956 forecast parameters (REPORTED)
+- name:           M. King Hubbert (1956) US oil peak forecast parameters
+- url:            https://en.wikipedia.org/wiki/Hubbert_peak_theory (primary: Hubbert 1956 API paper)
+- access_method:  download (secondary descriptions of the 1956 paper) — REPORTED
+- retrieved_at:   2026-06-05
+- raw_path:       N/A (REPORTED parameters)
+  - "Hubbert (1956, 'Nuclear Energy and the Fossil Fuels') used 150-200 Gb ultimate recoverable for the lower-48 and predicted a US peak ~1965 (150 Gb) to 1970 (200 Gb); his 200-Gb curve peaked ~1970 and the actual peak was ~17% higher" [https://en.wikipedia.org/wiki/Hubbert_peak_theory]
+- tier:           B (secondary descriptions of a Tier-A primary paper)
+- caveats:        We reconstruct his curve as a logistic-derivative from Q=150/200 Gb +
+                  peak 1965/1970 (lower-48); peak rates ~2.5/3.0 Gb/yr are his curve's
+                  stated peaks. The reconstruction is MODELED, faithful to his stated form.
