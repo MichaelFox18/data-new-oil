@@ -110,3 +110,4 @@ chapter. Built from `VERIFIED` findings only.
 - VERIFIED & on-screen-ready: F-01, F-02, F-03, F-04 (context), F-06, F-07, F-08, F-09, F-10.
 - REJECTED (negative result, not on screen): F-05 (Texas free-text AI scan).
 - GATE 8: `bash run.sh` reproduces all `results/` + `figures/` from `data/raw/`.
+- **GATE 8 APPROVED 2026-06-05** — FACTCHECK.md is the source of truth for the video script.
