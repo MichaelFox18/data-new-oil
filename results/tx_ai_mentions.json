@@ -1,0 +1,79 @@
+{
+  "source": "SRC-005 TX registry free text",
+  "n_brokers": 397,
+  "brokers_with_any_ai_term": 9,
+  "by_term": {
+    "artificial intelligence": 0,
+    "machine learning": 0,
+    "generative / genai": 0,
+    "llm / language model": 0,
+    "ai (standalone)": 9,
+    "model training": 0,
+    "neural / deep learning": 0
+  },
+  "examples": [
+    {
+      "name": "Nyne.ai Corp",
+      "terms": [
+        "ai (standalone)"
+      ],
+      "snippet": "nyne.ai corp. processes and transfers the following categories of personal data that it did not collect directly from the individual to whom the data pertains: identifiers: name, business email addres"
+    },
+    {
+      "name": "Intent IQ LLC",
+      "terms": [
+        "ai (standalone)"
+      ],
+      "snippet": "we are processing ip, user agent, hashed emails and browsing history which is used to build an identity graph. this identity graph is used to enrich ad tech interactions we are operating under soc2, t"
+    },
+    {
+      "name": "Innovation Brands Corp",
+      "terms": [
+        "ai (standalone)"
+      ],
+      "snippet": "we process and transfer deterministic identity data including email, phone, name, and address)and digital identifiers such as ip, maids, and uid2.0 to facilitate accurate matching . this is combined w"
+    },
+    {
+      "name": "Explorium Inc. ",
+      "terms": [
+        "ai (standalone)"
+      ],
+      "snippet": "explorium is an external data platform providing data services to businesses about businesses. the explorium platform and services assist marketing and sales teams with tailored go-to market data, all"
+    },
+    {
+      "name": "Faraday, Inc.",
+      "terms": [
+        "ai (standalone)"
+      ],
+      "snippet": "the below categories of data are limited to adult age americans \u2022 identity and location data (i.e., name, address, lat/long of dwelling, some hashed emails, emails, and phone numbers) \u2022 demographic in"
+    },
+    {
+      "name": "Dun & Bradstreet, Inc.",
+      "terms": [
+        "ai (standalone)"
+      ],
+      "snippet": "identifiers o name o email address o address o telephone number o login credentials professional contact and career information o business address o business email address o business phone o job title"
+    },
+    {
+      "name": "Warmly, Inc.",
+      "terms": [
+        "ai (standalone)"
+      ],
+      "snippet": "both the nametags and realtime insights services include all data (including personally identifiable information (\u201cpersonal data\u201d)), reports, text, images, sounds, video, and content made available th"
+    },
+    {
+      "name": "Seamless Contacts, Inc.",
+      "terms": [
+        "ai (standalone)"
+      ],
+      "snippet": "seamless.ai generally collects business contact information, such as name, email address, office phone number, office address, and employer name. you may read more about seamless.ai\u2019s privacy practice"
+    },
+    {
+      "name": "Fideo Intelligence, Inc.",
+      "terms": [
+        "ai (standalone)"
+      ],
+      "snippet": "public profile data examples: full name, email address, age, gender, social media profile urls, company name, company bio, general location, education, job title contact information examples: full nam"
+    }
+  ]
+}
