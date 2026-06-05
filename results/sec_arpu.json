@@ -1,0 +1,39 @@
+{
+  "reference_year": 2025,
+  "note": "annual FY2025 revenue / reported users; DAP/DAU/DAUq are daily, PINS MAU monthly (not strictly comparable)",
+  "companies": {
+    "META": {
+      "revenue_usd": 200966000000,
+      "metric": "Family DAP (daily active people, avg Dec 2025)",
+      "users": 3580000000.0,
+      "annual_rev_per_user_usd": 56.14,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm"
+    },
+    "SNAP": {
+      "revenue_usd": 5931447000,
+      "metric": "DAU (avg quarter ended Dec 31 2025)",
+      "users": 474000000.0,
+      "annual_rev_per_user_usd": 12.51,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1564408/000156440826000013/snap-20251231.htm"
+    },
+    "RDDT": {
+      "revenue_usd": 2202506000,
+      "metric": "DAUq (avg three months ended Dec 31 2025)",
+      "users": 121400000.0,
+      "annual_rev_per_user_usd": 18.14,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1713445/000171344526000022/rddt-20251231.htm"
+    },
+    "PINS": {
+      "revenue_usd": 4221767000,
+      "metric": "global MAU (monthly active users, ~Q4 2025)",
+      "users": 619000000.0,
+      "annual_rev_per_user_usd": 6.82,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1506293/000150629326000021/pins-20251231.htm"
+    },
+    "GOOGL": {
+      "revenue_usd": 402836000000,
+      "metric": "no per-user metric reported",
+      "annual_rev_per_user_usd": null
+    }
+  }
+}

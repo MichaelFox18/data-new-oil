@@ -107,3 +107,18 @@ say so explicitly — never leave a blank that looks complete.
 - tier:           A
 - caveats:        revenue is in us-gaap XBRL; user counts (MAU/DAU/ARPU) are usually
                   company EXTENSION tags NOT returned by companyfacts -> may need filing text.
+
+### SRC-007  Platform user metrics (FY2025 10-K, REPORTED)
+- name:           FY2025 10-K user metrics for ARPU (Meta / Snap / Reddit / Pinterest)
+- url:            per-company below (SEC EDGAR 10-K documents, period 2025-12-31)
+- access_method:  download (10-K HTML via SEC UA) — quoted text, not XBRL-tagged
+- retrieved_at:   2026-06-05
+- raw_path:       N/A (REPORTED quotes; re-derive with src/acquire/sec_user_metrics.py)
+  - META: Family DAP (daily active people, avg Dec 2025) = 3580000000  | "Family daily active people (DAP) was 3.58 billion on average for December 2025"  [https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm]
+  - SNAP: DAU (avg quarter ended Dec 31 2025) = 474000000  | "We had 474 million daily active users, or DAUs, on average in the quarter ended December 31, 2025; ARPU was $3.62 in Q4 2025"  [https://www.sec.gov/Archives/edgar/data/1564408/000156440826000013/snap-20251231.htm]
+  - RDDT: DAUq (avg three months ended Dec 31 2025) = 121400000  | "an average of 121.4 million daily active uniques (DAUq) ... three months ended December 31, 2025"  [https://www.sec.gov/Archives/edgar/data/1713445/000171344526000022/rddt-20251231.htm]
+  - PINS: global MAU (monthly active users, ~Q4 2025) = 619000000  | "619 million monthly active users from around the world come to Pinterest"  [https://www.sec.gov/Archives/edgar/data/1506293/000150629326000021/pins-20251231.htm]
+- tier:           A (company filings)
+- caveats:        DAP/DAU/DAUq are DAILY actives; PINS MAU is MONTHLY (larger base) -> not
+                  strictly comparable; user metrics are Q4-2025 point-in-time averages vs
+                  full-year revenue, so the ratio is an approximate annual rev-per-user.
