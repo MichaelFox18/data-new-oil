@@ -27,6 +27,7 @@ echo ">> interpreter: $PY ($("$PY" --version 2>&1))"
 "$PY" src/acquire/sec_edgar.py         # cached; needs SEC_EDGAR_USER_AGENT in .env
 # VT/OR/TX registries are committed raw (manual per GATE-2); ingest_local.py logs new ones.
 "$PY" src/acquire/eia.py               # cached; needs EIA_API_KEY in .env (Q8 Hubbert)
+"$PY" src/acquire/openalex.py          # cached; no key (F-10 data-labor proxy)
 
 # ---- Phase 4: validation & cleaning (raw -> data/interim) ----
 "$PY" src/validate/profile.py
@@ -42,10 +43,12 @@ echo ">> interpreter: $PY ($("$PY" --version 2>&1))"
 "$PY" src/analyze/crossover.py
 "$PY" src/analyze/deferral.py
 "$PY" src/analyze/hubbert.py
+"$PY" src/analyze/datalabor.py
 
 # ---- Phase 7: figures (results/ -> figures/, labels injected from data) ----
 "$PY" src/viz/crossover.py
 "$PY" src/viz/deferral.py
 "$PY" src/viz/hubbert.py
+"$PY" src/viz/datalabor.py
 
 echo ">> run.sh complete."

@@ -1,0 +1,115 @@
+{
+  "type": "MEASURED proxy: OpenAlex publication counts for human-data-for-AI terms; NOT a job count",
+  "series": {
+    "rlhf": {
+      "term": "reinforcement learning from human feedback",
+      "by_year": {
+        "2013": 1,
+        "2015": 1,
+        "2017": 1,
+        "2018": 1,
+        "2019": 2,
+        "2020": 3,
+        "2021": 6,
+        "2022": 51,
+        "2023": 1905,
+        "2024": 4370,
+        "2025": 4050
+      },
+      "2026_partial": 3281
+    },
+    "human_feedback": {
+      "term": "human feedback",
+      "by_year": {
+        "2010": 38,
+        "2011": 63,
+        "2012": 53,
+        "2013": 78,
+        "2014": 89,
+        "2015": 90,
+        "2016": 115,
+        "2017": 169,
+        "2018": 204,
+        "2019": 228,
+        "2020": 290,
+        "2021": 413,
+        "2022": 607,
+        "2023": 6706,
+        "2024": 12054,
+        "2025": 10668
+      },
+      "2026_partial": 7680
+    },
+    "data_annotation": {
+      "term": "data annotation",
+      "by_year": {
+        "2010": 165,
+        "2011": 165,
+        "2012": 214,
+        "2013": 239,
+        "2014": 300,
+        "2015": 356,
+        "2016": 435,
+        "2017": 458,
+        "2018": 638,
+        "2019": 782,
+        "2020": 1261,
+        "2021": 1878,
+        "2022": 2391,
+        "2023": 4752,
+        "2024": 5790,
+        "2025": 5397
+      },
+      "2026_partial": 2277
+    },
+    "data_labeling": {
+      "term": "data labeling",
+      "by_year": {
+        "2010": 280,
+        "2011": 311,
+        "2012": 331,
+        "2013": 423,
+        "2014": 540,
+        "2015": 551,
+        "2016": 676,
+        "2017": 810,
+        "2018": 1140,
+        "2019": 1789,
+        "2020": 2398,
+        "2021": 3363,
+        "2022": 4183,
+        "2023": 7284,
+        "2024": 7590,
+        "2025": 6367
+      },
+      "2026_partial": 2216
+    }
+  },
+  "growth": {
+    "rlhf": {
+      "2021_to_2024_x": 728.3,
+      "2017_to_2024_x": 4370.0,
+      "count_2024": 4370
+    },
+    "human_feedback": {
+      "2021_to_2024_x": 29.2,
+      "2017_to_2024_x": 71.3,
+      "count_2024": 12054
+    },
+    "data_annotation": {
+      "2021_to_2024_x": 3.1,
+      "2017_to_2024_x": 12.6,
+      "count_2024": 5790
+    },
+    "data_labeling": {
+      "2021_to_2024_x": 2.3,
+      "2017_to_2024_x": 9.4,
+      "count_2024": 7590
+    }
+  },
+  "caveats": [
+    "Counts works MENTIONING the phrase (full-text-ish) -> proxy for field growth, not jobs.",
+    "2026 is a partial year (retrieved mid-2026); future-dated buckets (2027/2036) dropped as errors.",
+    "The 2022->2023 jump is partly the real RLHF/ChatGPT boom and partly indexing lag."
+  ]
+}

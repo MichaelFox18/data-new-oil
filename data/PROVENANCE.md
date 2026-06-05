@@ -163,3 +163,19 @@ say so explicitly — never leave a blank that looks complete.
 - caveats:        We reconstruct his curve as a logistic-derivative from Q=150/200 Gb +
                   peak 1965/1970 (lower-48); peak rates ~2.5/3.0 Gb/yr are his curve's
                   stated peaks. The reconstruction is MODELED, faithful to his stated form.
+
+### SRC-011  OpenAlex publication-year counts (human-data-for-AI terms)
+- name:           OpenAlex works counts by publication year for RLHF / annotation terms
+- url:            https://api.openalex.org/works?search=<term>&group_by=publication_year
+- access_method:  api
+- retrieved_at:   2026-06-05 15:34 UTC
+- raw_path:       data/raw/openalex/  (files below)
+  - rlhf ("reinforcement learning from human feedback"): data/raw/openalex/rlhf.json sha256=9909f6e8ebf82f11ebdcab7fe79e206ee6e3a3fa84eace6dc721dd98a56481d6
+  - human_feedback ("human feedback"): data/raw/openalex/human_feedback.json sha256=309c2fd826bfc8734b5c8feccbd68a8beaee4ceb1b5ec79cff94a0ab23e46e9a
+  - data_annotation ("data annotation"): data/raw/openalex/data_annotation.json sha256=04556855d8fad912270b84d322946546a281582beeb4938fd7cf93662177d067
+  - data_labeling ("data labeling"): data/raw/openalex/data_labeling.json sha256=3cb371f69bce49f024d1831845aa41e800fe365a87ad4f68b807b611c913c602
+- license/terms:  OpenAlex CC0; polite pool (contact email REDACTED from logged URL)
+- tier:           A/B (bibliometric aggregator over crossref/MAG/etc.)
+- caveats:        'search' is full-text-ish (counts any work mentioning the phrase) -> a
+                  PROXY for field growth, NOT job counts; 2026 is a partial year; a few
+                  future-dated buckets (2027, 2036) are upstream date errors -> drop them.
